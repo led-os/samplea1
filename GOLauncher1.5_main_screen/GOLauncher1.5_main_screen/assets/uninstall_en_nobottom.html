@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Feedback</title>
+<style>
+*{ padding:0; margin:0;}
+html,body{margin:0;padding: 0 0 8px 0;}
+a,a:hover{ text-decoration:none;}
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;}
+ul li, ol li{ list-style-type:none;}
+input{-webkit-appearance: none;}
+.header{background-color:#2e2e2e; border-top:1px solid #3d3d3d; border-bottom:2px solid #3d3d3d;}
+.header span{ color:#e0e0e0; text-decoration:none; display:block;padding:0.9em; font-size:1.2em; font-weight:900; }
+/*.header a span{ font-weight:bolder; padding-right:0.5em; font-family:"宋体";}*/
+.container{ width:90%; margin:0 auto; color:#494949;}
+.feedtxt1{ border-bottom:1px solid #d2d2d2;}
+.feedtxt1 p{ border-bottom:1px solid #fff; line-height:1.2em; padding:1em 0; font-size:1.2em;}
+
+.container ul#checkbox_f li{ font-size:1em; padding:0.4em;}
+.container ul#checkbox_f li input{ margin-right:0.5em;}
+.container ul#checkbox_f li input[type="checkbox"]{ background:url(selected.png) no-repeat 0 -58px;width:18px;height:20px;margin-right:10px;}
+.container ul#checkbox_f li input[type="checkbox"]:checked{ background-position:0 -3px;}
+.container ul#checkbox_f li tr td:first-child{ vertical-align:top;}
+.txtare{ width:100%;  padding-top:5px;}
+.txtare textarea{border:1px solid #d2d2d2; background:#fff; width:100%;}
+.feedtxt2{ padding-top:1em; border-top:1px solid #d2d2d2; margin-top:0.5em;}	
+.feedtxt2 span{ display:block; float:left; background:#53ab33; height:8px; width:8px; border-radius:1px; margin:4px 5px 0 0;}
+.feedsubmit{ clear:both; padding:1em 0;}
+.feedsubmit a,.feedsumit2 div a{ display:block;height:2.3em; text-align:center; background:#85c443; color:#fff; font-size:1.1em; font-weight:bold; border:0; width:100%; border-radius:2px; line-height:2.3em;}
+.feedsumit2{ /*position:fixed; bottom:0; left:0; right:0;*/}
+.feedsumit2 div{ display:block; float:left; width:50%; }
+.feedsumit2 div:first-child a{ display:block; border-bottom-right-radius:0em; border-top-right-radius:0;}
+.feedsumit2 div.lastChid a{ border-bottom-left-radius:0; border-top-left-radius:0;border-left:1px solid #264e7d;}
+#loading {position: absolute;display: none;width: 32px;height: 32px;background: #FFF;z-index: 2009;}
+.div_middle{text-align:center;vertical-align:middle;background: #FFF;margin: 160px auto;}
+</style>
+<script type="text/javascript">
+function uninst(){
+	window.buttonclick.uninstalledGoLauncher();
+}
+function smt(){
+	if(check()){
+		loading();
+		var smtbtn=document.getElementById('sub');
+		smtbtn.style.background="#C4C4C4";
+		document.vote.submit();
+	}
+}
+
+function loading(){
+	var divs=document.getElementById('loading');
+	var v_left=document.body.clientWidth/2 + document.body.scrollLeft;
+	var v_top=(document.body.clientHeight-divs.clientHeight-120)/2 + document.body.scrollTop;
+	divs.style.left=v_left+'px';
+	divs.style.top=v_top+'px';
+	divs.style.display="block"; //显示DIV
+}
+function init(imei,lang,local,channel) {
+	var urlAdress="http://gosurvey.3g.net.cn/survey/webcontent/survey_new.jsp?uid=" + imei + "&sid=9d1a7b4d-0137-4f8b-95b1-6670cb02c7e7&lang="+ lang + "&local=" + local + "&channel=" + channel;
+	document.vote.action = urlAdress;
+}
+function check(){
+   	var input_all=0;
+    var u=document.getElementById('fbk');
+	if(! /^\s*$/.test(u.value))
+		input_all++;
+    var objs = document.getElementsByTagName("input");
+    for(var i=0; i<objs.length; i++) {
+		if(objs[i].type.toLowerCase() == "checkbox" && objs[i].checked)
+        input_all++;
+    }
+   if (input_all==0)
+   {
+   	 return true;
+   }else
+   	 return true;
+}
+</script>
+</head>
+
+<body>
+<div class="container">
+ <form  name="vote" id="vote" action="http://gosurvey.3g.net.cn/survey/webcontent/survey_new.jsp?uid=test&sid=b81b9a2f-5543-4f8a-bb5d-756994f7d458&local=US&lang=en&channel=20305" method="post">
+	<div id="loading"><img src="loading.gif"></div>
+	<div class="feedtxt1"><p>Dear user, could you tell us why you want to uninstall GO
+						Launcher? we will fix it as soon as possible. Thank you for your
+						support!</p></div>
+    <fieldset>
+    <ul id="checkbox_f">
+    	<li>
+        	<table >
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:0ebee634-d25a-48ba-8bf8-6bc9509a2884"
+							id="opid:db37babd-3b9b-46b5-a88b-b395734f1e33"
+							value="op:0ebee634-d25a-48ba-8bf8-6bc9509a2884:db37babd-3b9b-46b5-a88b-b395734f1e33" /></td>
+    			<td><label for="opid:db37babd-3b9b-46b5-a88b-b395734f1e33">A.Lagging&slow</label></td>
+    		</tr>
+            </table>
+        </li>
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:0ebee634-d25a-48ba-8bf8-6bc9509a2884"
+							id="opid:6468faaa-6221-4329-87c3-c6bf290cfb75"
+							value="op:0ebee634-d25a-48ba-8bf8-6bc9509a2884:6468faaa-6221-4329-87c3-c6bf290cfb75" /></td>
+        		<td><label for="opid:6468faaa-6221-4329-87c3-c6bf290cfb75">B.Battery consuming</label></td>
+    		</tr>
+            </table>
+        </li>
+
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:0ebee634-d25a-48ba-8bf8-6bc9509a2884"
+							id="opid:5dd4a79c-f6db-45da-a04e-5550e638afa7"
+							value="op:0ebee634-d25a-48ba-8bf8-6bc9509a2884:5dd4a79c-f6db-45da-a04e-5550e638afa7" /></td>
+        		<td><label for="opid:5dd4a79c-f6db-45da-a04e-5550e638afa7">C.Unstable performance</label></td>
+    		</tr>
+            </table>
+        </li>
+        		
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:0ebee634-d25a-48ba-8bf8-6bc9509a2884"
+							id="opid:053dd00d-b9dc-4940-99db-334572c81c26"
+							value="op:0ebee634-d25a-48ba-8bf8-6bc9509a2884:053dd00d-b9dc-4940-99db-334572c81c26" /></td>
+        		<td><label for="opid:053dd00d-b9dc-4940-99db-334572c81c26">D.Too little functionality，can not meet demand</label></td>
+    		</tr>
+            </table>
+        </li>
+        		
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:0ebee634-d25a-48ba-8bf8-6bc9509a2884"
+							id="opid:c5c808ce-a77c-4d56-a1a4-4596b6b3384f"
+							value="op:0ebee634-d25a-48ba-8bf8-6bc9509a2884:c5c808ce-a77c-4d56-a1a4-4596b6b3384f" /></td>
+        		<td><label for="opid:c5c808ce-a77c-4d56-a1a4-4596b6b3384f">E.Complicated to operate, difficult to use</label></td>
+    		</tr>
+            </table>
+        </li>
+
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:0ebee634-d25a-48ba-8bf8-6bc9509a2884"
+							id="opid:543b6a61-7e53-4e97-a768-0a1fc9d8f118"
+							value="op:0ebee634-d25a-48ba-8bf8-6bc9509a2884:543b6a61-7e53-4e97-a768-0a1fc9d8f118" /></td>
+        		<td><label for="opid:543b6a61-7e53-4e97-a768-0a1fc9d8f118">F.Back into the system desktop</label></td>
+    		</tr>
+            </table>
+        </li>
+        	
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:0ebee634-d25a-48ba-8bf8-6bc9509a2884"
+							id="opid:0b4d3d81-4dbc-4a5b-9910-295731271957"
+							value="op:0ebee634-d25a-48ba-8bf8-6bc9509a2884:0b4d3d81-4dbc-4a5b-9910-295731271957" /></td>
+        		<td><label	for="opid:0b4d3d81-4dbc-4a5b-9910-295731271957">G.Replace with other third-party desktop</label></td>
+    		</tr>
+            </table>
+        </li>
+    </ul>
+    
+    </fieldset>
+    <div class="feedtxt2"><span></span>Feedback</div>
+    <div class="txtare">
+    	<textarea name="feeback" cols="" rows="4" id="fbk"></textarea><br/><br/>
+    </div>
+<!--    <div class="feedsubmit" id="sub" ><a href="javascript:smt();">Submit</a></div> -->
+ 	    <div class="feedsumit2">
+ 	        	<div><a id="sub" href="javascript:smt();">Submit</a></div>
+ 	            <div class="lastChid"><a href="javascript:uninst();">Uninstall</a></div>
+	    </div>
+    </div>
+   
+	   		<input type="hidden" name="uuid" value="22039982-6ce1-4509-8b99-c499d886da3c" /> 
+			<input type="hidden" name="thanksword" value='Thank you for your support!' />
+			<input type="hidden" name="title" value='Reasons of uninstalling GO Launcher' /> 
+			<input type="hidden" name="smt" value='Submit' /> 
+			<input type="hidden" name="uninst" value='Uninstall' />
+    </form>
+</div>
+</body>
+</html>

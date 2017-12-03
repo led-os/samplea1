@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/sacan_result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/one_key_clern_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/mytheme_bottom_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jiubang.ggheart.components.DeskButton
+                android:id="@+id/btn_one_key_clernt"
+                android:layout_width="213dip"
+                android:layout_height="35.1dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/app_manager_uninstall_btn_bg"
+                android:enabled="false"
+                android:text="@string/clear_screen_one_key_clear"
+                android:textColor="#8c8c8c"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/result_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/one_key_clern_layout"
+            android:cacheColorHint="#00000000"
+            android:clickable="false"
+            android:divider="#000000"
+            android:listSelector="@drawable/transparent" />
+    </RelativeLayout>
+
+</LinearLayout>

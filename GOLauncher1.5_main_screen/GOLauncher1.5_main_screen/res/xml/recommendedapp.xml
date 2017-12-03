@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recommendedapps xmlns:launcher="http://schemas.android.com/apk/res/com.gau.go.launcherex">
+    <!-- <recommended_app
+		launcher:titleid="@string/recommend_title"						必选。名字。
+		launcher:detailid="@string/recommend_detail"						可选。应用详细描述。不填则默认为R.string.fav_app
+		launcher:iconid="@drawable/recommend_netqin" 					必选。图标。
+		launcher:packagename="com.netqin.ps" 							必选。包名。
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_NQ" 		必选。这个不需要在ICustomAction里定义。
+		launcher:download_url="" 										必选。跳电子市场：包名+ＧＡ(可选); FTP地址。
+		launcher:group="1" 												必选。列数 负数表示倒数第几列，正数表示列数，不填默认最后一列。
+		launcher:priority="0" 											必选。所在推荐组的优先级，0为最高优先级，1次之，以此类推
+		launcher:channelid="200" 										必选。推荐所在渠道。如果有多个渠道，需要用";"隔开
+		launcher:rowindex="2" 											必选。所在行数 负数表示倒数第几行，正数表示行数，不填默认最后一行。总行数 < 5,则倒数第二行之后的图标都不会添加
+		launcher:screenindex="0" 										可选。图标所在屏幕，不填默认主屏。
+		launcher:stime="2012-12-27 02:00" 								可选。推荐时间段开始 按照格式：yyyy-MM-dd HH:mm。
+		launcher:etime="2012-12-27 21:00" 								可选。推荐时间段结束 按照格式：yyyy-MM-dd HH:mm。
+		launcher:acttype="0" 											必选。跳转类型 0:电子市场， 1:ftp, 2:跳转浏览器。不填200包跳电子市场，其它ftp。
+		launcher:showinstallicon="true" 								可选。如果该应用已安装是否显示其图标，false不显示，true显示，不填不显示。
+		launcher:clickurl="url"											统计相关，必选。回调的url地址。按照以下格式，对“＊＊”里面的内容（包括＊）进行替换
+		(clickurl格式：http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=*包名*&amp;uid=3818431973086579092&amp;aid=*广告id*&amp;from=golaunchermagAdv&amp;mapid=*广告mapid*&amp;corpid=2)
+		launcher:id="56"												统计相关，必选。推荐图标id，由服务器那边提供。
+		launcher:mapid="2232055" 										统计相关，必选。回传的id，服务器提供。
+		launcher:recommendArea="-1"										可选。需要推荐的国家（根据国家地区简称进行判断），-1为全地区，不同地区用“;”隔开
+		launcher:unrecommendArea="kr"									可选。不需要推荐的国家（根据国家地区简称进行判断），不填则为没有地区，不同地区用“;”隔开。必须与recommendArea组合使用
+	/>  -->
+	
+	<!-- 安卓优化大师 -->
+	<recommended_app
+		launcher:titleid="@string/recommend_du_speed_booster"
+		launcher:detailid="@string/recommend_du_speed_booster_detail"
+		launcher:iconid="@drawable/dubatterysaver"
+		launcher:packagename="com.dianxinos.optimizer.duplay"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_DuSpeedBooster"
+		launcher:download_url="http://app.appsflyer.com/com.dianxinos.optimizer.duplay?pid=3G#302"
+		launcher:group="0"
+		launcher:priority="0"
+		launcher:channelid="200"
+		launcher:rowindex="-2"
+		launcher:acttype="2"
+		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.dianxinos.optimizer.duplay&amp;uid=3818431973086579092&amp;aid=564&amp;from=golaunchermagAdv&amp;mapid=5377557&amp;corpid=2"
+		launcher:id="564"
+		launcher:mapid="5377557"
+		launcher:recommendArea="-1"
+		launcher:showinstallicon="false" 
+	/>
+	<!-- 傲游浏览器  -->
+	<recommended_app
+		launcher:titleid="@string/recommend_maxthon_browser"
+		launcher:detailid="@string/recommend_maxthon_browser_detail"
+		launcher:iconid="@drawable/app_fastbrowser_icon"
+		launcher:packagename="com.mx.browser"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_FAST_BROWSER"
+		launcher:download_url="com.mx.browser&amp;referrer=utm_source%3D3GGo%26utm_medium%3D3GGoDestop%26utm_term%3Dmaxthon_browser%26utm_content%3DScreen0%26utm_campaign%3D6200889000"
+		launcher:group="1"
+		launcher:priority="0"
+		launcher:channelid="200"
+		launcher:rowindex="-2"
+		launcher:acttype="0"
+		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.mx.browser&amp;uid=3818431973086579092&amp;aid=556&amp;from=golaunchermagAdv&amp;mapid=5380697&amp;corpid=2"
+		launcher:id="556"
+		launcher:mapid="5380697"
+		launcher:recommendArea="-1"
+		launcher:showinstallicon="false" 
+	/>
+	<!-- 网秦 二期需求：屏蔽200渠道非韩国地区-->
+	<recommended_app
+		launcher:titleid="@string/recommend_nq_security"
+		launcher:detailid="@string/recommend_nq_security_detail"
+		launcher:iconid="@drawable/netqin_logo_4_def3"
+		launcher:packagename="com.netqin.ps"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_NQ"
+		launcher:download_url="com.netqin.ps&amp;referrer=utm_source%3D3Ggolauncher%26utm_medium%3DCPA%26utm_campaign%3DVault"
+		launcher:group="0"
+		launcher:priority="0"
+		launcher:channelid="373;250"
+		launcher:rowindex="-2"
+		launcher:acttype="0"
+		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.netqin.ps&amp;uid=3818431973086579092&amp;aid=56&amp;from=golaunchermagAdv&amp;mapid=2459299&amp;corpid=2"
+		launcher:id="56"
+		launcher:mapid="2459299"
+		launcher:recommendArea="sa;ae;qa;ru;ua;vn;my;tr;de;es;za;us"
+		launcher:unrecommendArea="kr"
+	/> 
+	
+	<!--nextlauncher -->
+	<recommended_app
+		launcher:titleid="@string/recommend_nextlauncher"
+		launcher:detailid="@string/recommend_nextlauncher_detail"
+		launcher:iconid="@drawable/nextlauncher"
+		launcher:packagename="com.gtp.nextlauncher"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_NEXTLAUNCHER"
+		launcher:download_url="com.gtp.nextlauncher&amp;referrer=utm_source%3Dgo_launcher%26utm_medium%3DHyperlink%26utm_campaign%3Dhomescreen_ads"
+		launcher:group="0"
+		launcher:priority="0"
+		launcher:channelid="200;373;250"
+		launcher:rowindex="-1"
+		launcher:acttype="0"
+		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.gtp.nextlauncher&amp;uid=3818431973086579092&amp;aid=1454344&amp;from=golaunchermagAdv&amp;mapid=2360425&amp;corpid=2"
+		launcher:id="57"
+		launcher:mapid="2360425"
+		launcher:recommendArea="-1"
+		launcher:unrecommendArea="kr"
+		launcher:showinstallicon="false" 
+	/>
+	
+	<!--Go锁屏 二期需求：只针对200渠道非韩国地区 
+		action已做特殊处理，此处无需统计相关的字段配置-->
+	<recommended_app
+	    launcher:titleid="@string/recommand_lockscreen"
+		launcher:detailid="@string/recommend_nextlauncher_detail"
+		launcher:iconid="@drawable/screen_edit_golocker"
+		launcher:packagename="com.jiubang.goscreenlock"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_GOLOCKER"
+		launcher:download_url="http://cache.3g.cn/gosoft/go_launcher/golockerqudao/GOLocker_583.apk"
+		launcher:group="1"
+		launcher:priority="0"
+		launcher:channelid="200"
+		launcher:rowindex="-1"
+		launcher:acttype="0"
+		launcher:recommendArea="-1"
+		launcher:unrecommendArea="kr"
+		launcher:showinstallicon="true"
+	/>
+	
+	<!--Go推荐动态壁纸(只有在已安装Go锁屏已安装或不符合显示条件的情况下显示在Go锁屏的位置)   com.gau.go.launcher.lwp.core-->
+	<recommended_app
+	    launcher:titleid="@string/go_recomm_live_wallpaper_title"
+		launcher:detailid="@string/recommend_nextlauncher_detail"
+		launcher:iconid="@drawable/recomm_live_wallpaper_icon"
+		launcher:packagename="com.gau.go.launcher.lwp.core"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_RECOMMLIVEWALLPAPER"
+		launcher:download_url="com.gau.go.launcher.lwp.core"
+		launcher:group="1"
+		launcher:priority="0"
+		launcher:channelid="200"
+		launcher:rowindex="-1"
+		launcher:acttype="0"
+		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.gau.go.launcher.lwp.core&amp;uid=3818431973086579092&amp;aid=623&amp;from=golaunchermagAdv&amp;mapid=5525561&amp;corpid=2"
+		launcher:id="623"
+		launcher:mapid="5525561"
+		launcher:recommendArea="-1"
+		launcher:unrecommendArea="kr"
+		launcher:showinstallicon="true"
+	/>
+	
+	<!-- 清理大师 二期需求：只针对200渠道非韩国地区-->
+	<recommended_app
+		launcher:titleid="@string/recommend_clean_master"
+		launcher:detailid="@string/recommend_clean_master_detail"
+		launcher:iconid="@drawable/cleanmaster"
+		launcher:packagename="com.cleanmaster.mguard"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_CLEANMASTER"
+		launcher:download_url="com.cleanmaster.mguard&amp;referrer=utm_source%3D2000000002%26utm_medium%3DGolaucher3"
+		launcher:group="3"
+		launcher:priority="0"
+		launcher:channelid="200"
+		launcher:rowindex="-1"
+		launcher:acttype="0"
+		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.cleanmaster.mguard&amp;uid=3818431973086579092&amp;aid=84&amp;from=golaunchermsgAdv&amp;mapid=2463865&amp;corpid=2"
+		launcher:id="84"
+		launcher:mapid="2463865"
+		launcher:recommendArea="-1"
+		launcher:unrecommendArea="kr"
+	/>
+	
+	<!-- 清理大师 旧的配置：非200渠道-->
+	<recommended_app
+		launcher:titleid="@string/recommend_clean_master"
+		launcher:detailid="@string/recommend_clean_master_detail"
+		launcher:iconid="@drawable/cleanmaster"
+		launcher:packagename="com.cleanmaster.mguard"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_CLEANMASTER"
+		launcher:download_url="com.cleanmaster.mguard&amp;referrer=utm_source%3D2000000002%26utm_medium%3DGolaucher3"
+		launcher:group="3"
+		launcher:priority="0"
+		launcher:channelid="373;250"
+		launcher:rowindex="-2"
+		launcher:acttype="0"
+		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.cleanmaster.mguard&amp;uid=3818431973086579092&amp;aid=84&amp;from=golaunchermsgAdv&amp;mapid=2463865&amp;corpid=2"
+		launcher:id="84"
+		launcher:mapid="2463865"
+	/>
+	
+	<!-- little empire 二期需求：屏蔽200渠道非韩国地区-->
+	<recommended_app
+		launcher:titleid="@string/recommend_little_empire"
+		launcher:iconid="@drawable/littleempire"
+		launcher:packagename="com.camelgames.fantasyland"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_LITTLTE_EMPIRE"
+		launcher:download_url="com.camelgames.fantasyland&amp;referrer=utm_source%3Dgo_launcher%26utm_medium%3Dhyperlink%26utm_campaign%3Dhomescreen_ads"
+		launcher:group="0"
+		launcher:priority="0"
+		launcher:channelid="373;250"
+		launcher:rowindex="-2"
+		launcher:acttype="0"
+		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.camelgames.fantasyland&amp;uid=3818431973086579092&amp;aid=148&amp;from=golaunchermagAdv&amp;mapid=2470003&amp;corpid=2"
+		launcher:id="148"
+		launcher:mapid="2470003"
+		launcher:recommendArea="hk;mo;tw"
+		launcher:unrecommendArea="kr"
+	/>
+	
+	<!-- GO输入法 二期需求：屏蔽200渠道非韩国地区-->
+	<recommended_app
+		launcher:titleid="@string/recommend_go_inputmethod"
+		launcher:iconid="@drawable/gokeyboard"
+		launcher:packagename="com.jb.gokeyboard"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_GOKEYBOARD"
+		launcher:download_url="com.jb.gokeyboard&amp;referrer=utm_source%3DGOKEYBOARD%26utm_medium%3Dhyperlink%26utm_campaign%3DLauncher3screen5column"
+		launcher:group="4"
+		launcher:priority="0"
+		launcher:channelid="200"
+		launcher:rowindex="-2"
+		launcher:acttype="0"
+		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.jb.gokeyboard&amp;uid=3818431973086579092&amp;aid=607&amp;from=golaunchermagAdv&amp;mapid=2380423&amp;corpid=2"
+		launcher:id="607"
+		launcher:mapid="2380423"
+		launcher:recommendArea="-1"
+		launcher:unrecommendArea="kr"
+		launcher:showinstallicon="false" 
+	/>
+	
+	<!-- GO Backup pro -->
+<!-- 	<recommended_app -->
+<!-- 		launcher:titleid="@string/recommand_gobackup" -->
+<!-- 		launcher:iconid="@drawable/gobackup" -->
+<!-- 		launcher:packagename="com.jiubang.go.backup.ex" -->
+<!-- 		launcher:action="com.jiubang.intent.action.DOWNLOAD_GOBACKUPPRO" -->
+<!-- 		launcher:download_url="com.jiubang.go.backup.ex&amp;referrer=utm_source%3Dhomescreen%26utm_medium%3DHyperlink%26utm_campaign%3Dhomescreen" -->
+<!-- 		launcher:group="2" -->
+<!-- 		launcher:priority="0" -->
+<!-- 		launcher:channelid="200;373;250" -->
+<!-- 		launcher:rowindex="-2" -->
+<!-- 		launcher:showinstallicon="true"  -->
+<!-- 		launcher:acttype="0" -->
+<!-- 		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.jiubang.go.backup.ex&amp;uid=3818431973086579092&amp;aid=166&amp;from=golaunchermagAdv&amp;mapid=2380425&amp;corpid=2" -->
+<!-- 		launcher:id="166" -->
+<!-- 		launcher:mapid="2380425" -->
+<!-- 		launcher:recommendArea="-1" -->
+<!-- 	/> -->
+	
+		<!-- 美化中心 二期需求：保留韩国地区-->
+	<recommended_app
+		launcher:titleid="@string/recommend_title_kitty_play"
+		launcher:iconid="@drawable/kittyplay"
+		launcher:packagename="com.kittyplay.ex"
+		launcher:action="com.jiubang.intent.action.DOWNLOAD_KITTYPLAY"
+		launcher:download_url="com.kittyplay.ex&amp;referrer=utm_source%3Dlauncher%26utm_medium%3DHyperlink%26utm_campaign%3DHomescreen"
+		launcher:group="2"
+		launcher:priority="0"
+		launcher:channelid="200;373;250"
+		launcher:rowindex="-2"
+		launcher:acttype="0"
+		launcher:showinstallicon="true" 
+		launcher:id="250"
+		launcher:mapid="3591847"
+		launcher:clickurl="http://69.28.52.42:8090/recommendedapp/manage/appcallback.action?cburl=&amp;ctype=0&amp;pname=com.kittyplay.ex&amp;uid=3818431973086579092&amp;aid=250&amp;from=golaunchermagAdv&amp;mapid=3591847&amp;corpid=2"
+		launcher:recommendArea="kr"
+	/>
+	
+</recommendedapps>

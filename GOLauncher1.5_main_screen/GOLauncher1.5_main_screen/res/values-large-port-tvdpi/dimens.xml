@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义与组件相关的尺寸、坐标 -->
+
+<resources>
+
+	<dimen name="folder_edit_item_height">80dip</dimen>
+	<dimen name="folder_edit_view_height">465dip</dimen>
+</resources>

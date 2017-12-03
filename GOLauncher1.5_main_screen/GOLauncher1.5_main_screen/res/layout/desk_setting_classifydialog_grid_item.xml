@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingClassifyDialogGridItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/prime_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/desk_setting_classify_dialog_prime_img"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/choose_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/image"
+            android:layout_alignBottom="@id/image"
+            android:src="@drawable/desk_setting_classify_dialog_choose_img"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:lines="2"
+            android:gravity="center"
+            android:textColor="#6f6f6f"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingClassifyDialogGridItemView>

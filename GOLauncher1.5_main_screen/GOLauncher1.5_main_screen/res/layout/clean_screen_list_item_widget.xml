@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.ggheart.components.appmanager.ScanResultLIstViewItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip" >
+
+        <ImageView
+            android:id="@+id/icon_iamge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toLeftOf="@id/checkbox"
+            android:scaleType="fitStart" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/desk_setting_checkbox" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/desk_setting_item_view_gray_line" />
+
+</com.jiubang.ggheart.components.appmanager.ScanResultLIstViewItemView>

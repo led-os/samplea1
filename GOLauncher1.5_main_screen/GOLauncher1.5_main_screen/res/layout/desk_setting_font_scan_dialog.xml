@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:paddingTop="16dip" 
+            android:paddingBottom="16dip"
+            android:orientation="vertical"
+            >
+
+            <com.jiubang.ggheart.components.DeskTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/font_scan_package"
+                android:textColor="#343434"
+                android:textSize="15sp" 
+                android:layout_marginBottom="6.6dip"/>
+
+            <com.jiubang.ggheart.components.DeskTextView
+                android:id="@+id/scan_folder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:textColor="#343434"
+                android:textSize="12sp" 
+                android:layout_marginTop="6.6dip"
+                android:layout_marginBottom="6.6dip"/>
+
+            <com.jiubang.ggheart.components.DeskTextView
+                android:id="@+id/scan_result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#71A901"
+                android:textSize="12sp" 
+                android:layout_marginTop="6.6dip"
+                />
+        </LinearLayout>
+
+</LinearLayout>

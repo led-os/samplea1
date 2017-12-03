@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.ggheart.apps.desks.diy.frames.tipsforgl.tutorial.AppDrawerSlideMenuTutorial xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appdrawguidetutorial"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/guide_hand"
+         android:layout_width="@dimen/guide_slidemenu_hand_width"
+        android:layout_height="@dimen/guide_slidemenu_hand_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="37dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide_hand" />
+
+    
+    <RelativeLayout
+        android:id="@+id/mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="18dp" >
+
+        <com.jiubang.ggheart.components.DeskTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="73.4dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/appdraw_guide_title"
+            android:textColor="#92DD6D"
+            android:textSize="20sp" />
+
+        <com.jiubang.ggheart.components.DeskTextView
+            android:id="@+id/tips_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="73.4dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="26.7dp"
+            android:text="@string/appdraw_guide_tutoria"
+            android:textColor="#d4d4d4"
+            android:textSize="14.6sp" />
+
+        <RelativeLayout
+            android:id="@+id/mask"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/tips_message"
+            android:paddingLeft="73.4dp" >
+
+            <ImageView
+                android:id="@+id/guide_hide"
+                android:layout_width="229dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/guide_hide" 
+                android:scaleType="fitXY"/>
+
+            <com.jiubang.ggheart.components.DeskButton
+                android:id="@+id/got_it"
+                android:layout_width="126.6dp"
+                android:layout_height="34.6dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@id/guide_hide"
+                android:layout_alignBottom="@id/guide_hide"
+                android:background="@drawable/gotit_state_background"
+                android:text="@string/tip_btn_txt"
+                android:textColor="#ffffff"
+                android:textSize="17.3sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.jiubang.ggheart.apps.desks.diy.frames.tipsforgl.tutorial.AppDrawerSlideMenuTutorial><!--
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ggheart="http://schemas.android.com/apk/res/com.gau.go.launcherex"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	
+	<com.jiubang.ggheart.apps.desks.diy.frames.preview.AppDrawGuideTutorial
+		android:id="@+id/appdrawguidetutorial"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+	/>
+
+</FrameLayout>
+
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.ggheart.apps.desks.diy.frames.preview.AppDrawGuideTutorial xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appdrawguidetutorial"
+    android:clickable="true"
+    android:background="@drawable/guide_black_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.jiubang.ggheart.components.DeskTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/appdraw_guide_title"
+        android:textColor="#92DD6D"
+        android:textSize="20sp" />
+
+    <com.jiubang.ggheart.components.DeskTextView
+        android:id="@+id/tips_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/appdraw_guide_tutoria"
+        android:textColor="#d4d4d4"
+        android:textSize="14.6sp" />
+
+    <com.jiubang.ggheart.components.DeskButton
+        android:id="@+id/got_it"
+        android:layout_width="126.6dp"
+        android:layout_height="34.6dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tips_message"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/guide_tips_btn"
+        android:text="@string/tip_btn_txt"
+        android:textColor="#ffffff"
+        android:textSize="17.3sp" />
+
+</com.jiubang.ggheart.apps.desks.diy.frames.preview.AppDrawGuideTutorial>
+-->

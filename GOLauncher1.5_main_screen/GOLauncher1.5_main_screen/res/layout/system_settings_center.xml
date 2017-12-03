@@ -1,0 +1,466 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myAndroid="http://schemas.android.com/apk/res/com.gau.go.launcherex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/desk_setting_bg_color"
+    tools:context="com.jiubang.ggheart.screen.systemsettings.SystemSettingsCenter" >
+    
+    <RelativeLayout 
+        android:id="@+id/system_settings_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+	    <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingPageTitleView
+	        android:id="@+id/system_settings_center_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        myAndroid:image="@drawable/system_settings_title_icon"
+	        myAndroid:titleText="@string/menuitem_setting" />
+	    
+	    <ImageButton 
+    	    android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:layout_alignParentRight="true"
+      		android:layout_centerVertical="true"
+      		android:id="@+id/desksetting_update_prime"
+      		android:background="#00000000"
+      		android:paddingRight="10dp"
+      		android:paddingLeft="16dp"
+      		android:paddingTop="8dp"
+      		android:paddingBottom="8dp"	 
+      		android:src="@drawable/desk_setting_main_prime_icon_button"/>
+	    
+	 </RelativeLayout>
+        
+     <com.jiubang.ggheart.components.DeskButton
+        android:id="@+id/more_sys_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/system_settings_more"
+        android:textColor="#707070"
+        android:textSize="15dp"
+        android:background="@drawable/system_settings_more_btn_selector"
+     />
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/system_settings_title"
+        android:layout_above="@id/more_sys_setting">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.jiubang.ggheart.components.DeskTextView
+                android:id="@+id/networkdata"
+                android:layout_width="fill_parent"
+                android:layout_height="35.5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="21.33dp"
+                android:text="@string/system_settings_network"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#707070"
+                android:textSize="13sp"
+                android:background="@drawable/system_settings_second_title_bg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout 
+                    android:id="@+id/wifi_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/wifi_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_wifi"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/wifi_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_network_wifi"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <ImageView 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/system_settings_diver_line"/>
+                
+                <LinearLayout 
+                    android:id="@+id/mobidata_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/mobidata_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_mobidata"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/mobidata_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_network_mobile_data"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <ImageView 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/system_settings_diver_line"/>
+                
+                <LinearLayout 
+                    android:id="@+id/tether_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/tether_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_tether"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/tether_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_network_tether"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <ImageView 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/system_settings_diver_line"/>
+                
+                <LinearLayout 
+                    android:id="@+id/bluetooth_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/bluetooth_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_bluetooth"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/bluetooth_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_network_bluetooth"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/system_settings_diver_line"/>
+
+            <com.jiubang.ggheart.components.DeskTextView
+                android:id="@+id/dailylife"
+                android:layout_width="fill_parent"
+                android:layout_height="35.5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="21.33dp"
+                android:text="@string/system_settings_daily"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#707070"
+                android:textSize="13sp"
+                android:background="@drawable/system_settings_second_title_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout 
+                    android:id="@+id/screenlock_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/screenlock_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_security"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/screenlock_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_daily_screensecurity"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <ImageView 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/system_settings_diver_line"/>
+                
+                <LinearLayout 
+                    android:id="@+id/display_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/display_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_brigtness"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/display_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_daily_display"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <ImageView 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/system_settings_diver_line"/>
+                
+                <LinearLayout 
+                    android:id="@+id/ringtone_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/ringtone_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_ringtone"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/ringtone_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_daily_ringtone"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <ImageView 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/system_settings_diver_line"/>
+                
+                <LinearLayout 
+                    android:id="@+id/language_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/language_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_language_input"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/language_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_daily_language"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/system_settings_diver_line"/>
+            
+            <com.jiubang.ggheart.components.DeskTextView
+                android:id="@+id/deviceinfo"
+               	android:layout_width="fill_parent"
+                android:layout_height="35.5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="21.33dp"
+                android:text="@string/system_settings_device"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#707070"
+                android:textSize="13sp"
+                android:background="@drawable/system_settings_second_title_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" >
+
+                <LinearLayout 
+                    android:id="@+id/appinfo_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/appinfo_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_apps"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/appinfo_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_device_application"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <ImageView 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/system_settings_diver_line"/>
+                
+                <LinearLayout 
+                    android:id="@+id/storage_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/storage_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_storage"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/storage_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_device_storage"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <ImageView 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/system_settings_diver_line"/>
+                
+                <LinearLayout 
+                    android:id="@+id/battery_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/battery_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_battery"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/battery_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_device_battery"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <ImageView 
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/system_settings_diver_line"/>
+                
+                <LinearLayout 
+                    android:id="@+id/datausage_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="89dp"
+                    android:minWidth="89dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/system_settings_item_selector"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView 
+                        android:id="@+id/datausage_btn_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/system_settings_datausage"/>
+                    <com.jiubang.ggheart.components.DeskTextView 
+                        android:id="@+id/datausage_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#707070"
+                        android:text="@string/system_settings_device_usages"
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/system_settings_diver_line"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

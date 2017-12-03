@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/quick_action_menu_width"
+    android:layout_height="@dimen/quick_action_menu_heigth"
+    android:orientation="vertical"
+    android:padding="0dp">
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_centerInParent="true"
+	    android:gravity="center">
+    <ImageView
+        android:id="@+id/quickmenu_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.jiubang.ggheart.components.DeskTextView
+        android:id="@+id/quickmenu_txt"
+        android:layout_below="@+id/quickmenu_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:shadowColor="#3a000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:textColor="#ffffffff"
+        android:textSize="11sp">
+    </com.jiubang.ggheart.components.DeskTextView>
+	</RelativeLayout>
+</RelativeLayout>

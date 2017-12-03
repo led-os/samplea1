@@ -1,0 +1,9 @@
+PROJECT_TITLE=GOLauncherEX_200包
+GOLauncherEX_SVN_CODE=107328
+GOLauncherEX_ShellPlugin_SVN_CODE=107321
+GOLauncherEX_Main_InnerWidgets_SVN_CODE=107292
+VERSION_CODE=318
+VERSION_NAME=5.0
+MAIL_SEND_TO=徐江平 <xujiangping@sungymobile.com>, 江平 <jiangping@sungymobile.com>,李林辉 <lilinhui@sungymobile.com>,xueshuting@sungymobile.com
+MAIL_SEND_CC=黄淋淋 <huanglinlin@sungymobile.com>, 金立敏 <jinlimin@sungymobile.com>, 张家权 <zhangjiaquan@sungymobile.com>, 胡兵 <hubing@sungymobile.com>, 莫玉辉 <moyuhui@sungymobile.com>,  王焯斌 <wangzhuobin@sungymobile.com>,  杨冠祥 <yangguanxiang@sungymobile.com>, 曾文清 <zengwenqing@sungymobile.com>,  黄晓君 <huangxiaojun@sungymobile.com>, 李冬红 <lidonghong@sungymobile.com>, 林竹君 <linzhujun@sungymobile.com>,  莫浩诚 <mohaocheng@sungymobile.com>, 桂东纬 <guidongwei@sungymobile.com>, 刘欣 <liuxin@sungymobile.com>, 郑宇亮 <zhengyuliang@sungymobile.com>, 陈文胜 <chenwensheng@sungymobile.com>, 黄伟基 <huangweiji@sungymobile.com>, 刘珊 <liushan@sungymobile.com>, "gt0-jc@sungymobile.com" <gt0-jc@sungymobile.com>,  桌面运营 <gt0-cpyy@sungymobile.com>, 桌面服务 <gt0-fw@sungymobile.com>,  zhanbingjian <zhanbingjian@sungymobile.com>, 何洁莹 <hejieying@sungymobile.com>, 郑鱼鱼 <zhengyuyu@sungymobile.com>, 孔令发 <konglingfa@sungymobile.com>, 赵志鹏 <zhaozhipeng@sungymobile.com>,  周国盛 <zhouguosheng@sungymobile.com>, 陆晓河 <luxiaohe@sungymobile.com> 
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!-- 定义与组件相关的尺寸、坐标 --><resources>
+	<!-- 主题管理 -->
+    
+    <dimen name="mytheme_pic_width">67dip</dimen>
+    <dimen name="mytheme_pic_height">101dip</dimen>
+     <!-- 未安装锁屏界面 -->
+	<dimen name="logo_padding_top_v">5dip</dimen>
+	<dimen name="logo_text_padding_top_v">5dip</dimen>
+	<dimen name="lockerimg_padding_top_v">10dip</dimen>
+	<dimen name="locker_text_padding_top_v">5dip</dimen>
+	<dimen name="btn_padding_top_v">5dip</dimen>
+	<dimen name="lockerimg_padding_left_h">1dip</dimen>
+	<dimen name="logo_padding_left_h">1dip</dimen>
+	
+    <dimen name="singletheme_detail_pic_width_mdpi">167dip</dimen>
+    
+    <dimen name="theme_list_item_height">154dip</dimen>
+<!--     <dimen name="theme_list_item_height">174dip</dimen> -->    
+    
+    	<!-- 去gostore下载bar高度 -->	
+	<dimen name="theme_gostore_bar_height">48dip</dimen>
+   	<dimen name="theme_top_height">48dip</dimen>
+	<dimen name="theme_tab_height">56dip</dimen>	
+    <!-- 功能表搜索 -->
+	<dimen name="appfunc_search_naviagation_text_size">7dp</dimen>
+    <!-- 桌面帮助层 -->
+    <dimen name="guide_screeneffect_title_height">31dip</dimen>
+    <dimen name="guide_screeneffect_listview_height_secondtip">280dip</dimen>
+    <dimen name="guide_screeneffect_topline_listview_space_secondtip">2dip</dimen>
+    <dimen name="guide_screeneffect_listview_button_space_secondtip">1dip</dimen>
+    <dimen name="guide_screeneffect_buttons_settingpath_space_secondtip">0dip</dimen>
+    
+    
+    
+    
+    
+    
+    <dimen name="guide_dock_button_margin_top">30dp</dimen>
+    <dimen name="guide_dock_tip_width">210dp</dimen>
+     <!-- 功能表帮助层 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dimen name="folder_edit_indicator_hight">14dip</dimen>
+    <dimen name="folder_edit_view_height">419dip</dimen>
+    
+    
+    
+    <!-- 行列数自适应 -->
+    
+    
+    
+     <!-- 应用游戏中心的按钮文件大小 -->
+     <dimen name="appgame_textSize_cn">12dip</dimen>
+     <dimen name="appgame_textSize_es">11dip</dimen>
+     <!-- 应用游戏中心启动loading页 -->
+        <dimen name="appgame_startloading_image_width">163.333333dp</dimen>
+     <dimen name="appgame_startloading_image_height">172.666666667dp</dimen>
+     <dimen name="appgame_startloading_image_topmargin">50dp</dimen>
+     <dimen name="appgame_startloading_title_size">24dp</dimen>
+     <dimen name="appgame_startloading_title_topmargin">8dp</dimen>
+     <dimen name="appgame_startloading_desc_size">12.666666666667dp</dimen>
+     <dimen name="appgame_startloading_desc_topmargin">17.33333333333dp</dimen>
+     <dimen name="appgame_startloading_progress_width">20dp</dimen>
+     <dimen name="appgame_startloading_progress_height">20dp</dimen>
+     <dimen name="appgame_startloading_progress_topmargin">16.66666667dp</dimen>
+     <dimen name="appgame_startloading_copyright_bottommargin">15dp</dimen>
+     <dimen name="appgame_startloading_copyright_size">11.33333333dp</dimen>
+     
+     <!-- facebook相关 -->
+    
+    <dimen name="counter_circle_padding">12dip</dimen>
+
+    
+    <dimen name="password_locksummary_margintop">5dp</dimen>
+    <dimen name="password_lockpatternview_margintop">5dp</dimen>
+    
+      <!-- slide menu hand width and height -->
+    <dimen name="guide_slidemenu_hand_width">42dp</dimen>
+    <dimen name="guide_slidemenu_hand_height">56dp</dimen>
+    
+	<dimen name="guide_big_logo_margin_top">20dip</dimen>
+    <dimen name="guide_function_margin_top">12dp</dimen>
+    <dimen name="guide_new_user_title_margin_top">70dp</dimen>
+    <dimen name="guide_update_title_margin_top">10dp</dimen>
+    <dimen name="guide_agreement_margin_top">25dp</dimen>
+    <dimen name="guide_enter_margin_bottom">30dp</dimen>
+    <dimen name="guide_update_content_margin_top">5dp</dimen>
+    <dimen name="guide_update_content_height">150dp</dimen>    
+</resources>

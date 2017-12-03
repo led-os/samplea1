@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="lib" path="libs/libGoogleAnalytics.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/base.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Net.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/nineoldandroids.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/spellSearch.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/unionprotocol.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/ViewCompatProxy.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/staticssdk.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/framework.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/golauncherex_plugin_inf.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

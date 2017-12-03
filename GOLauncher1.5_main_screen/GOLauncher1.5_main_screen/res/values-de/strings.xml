@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="rate_remind_msg_new">Wir hoffen, dass Sie die benutzerdefinierte und vielfältige Funktionen von GO Launcher mögen.Bitte geben Sie uns eine Bewertung als 5 Sterne auf Google Play. </string>
+ 	<string name="rate_remind_msg_runningclean">Erfolgreich %s M Speicherplatz für Sie freigegeben. Ist es 5 Sterne wert?</string>
+ 	<string name="rate_remind_msg_recentlyclean">Wir bemühen uns,um reibungslose Betriebsanimation anzubieten. Ihre Unterstützung ist Ermutigung! Bitte bewerten Sie uns 5 Sterne.</string>
+ 	<string name="rate_remind_msg_applytheme"> Mehr als 10,000 spezielle Themen für Sie. Ist es 5 Sterne wert?</string>
+    <string name="rate_remind_next">später</string>
+    <string name="rate_remind_msg_twice">GO Launcher hat Ihnen schon %s begleitet. Wenn Sie die kundendefinierten und umfangreichen Funktionen mögen, bewerten Sie uns bitte mit 5 Sterne.</string>
+    <string name="rate_rate">Gefällt mir!</string>
+    <string name="unit_days">Tag</string>
+    <string name="unit_hours">Stunden</string>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ==================Go推荐Widget==================== -->
+    <!-- Go推荐Widget-个性化推荐应用名称显示行数 -->
+    <integer name="gorecomm_widget_individuation_name_show_rows">1</integer>
+</resources>

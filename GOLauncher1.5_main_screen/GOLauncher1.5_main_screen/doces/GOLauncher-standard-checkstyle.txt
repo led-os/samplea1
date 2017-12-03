@@ -1,0 +1,10 @@
+checkstyle文件在桌面工程根目录下，golauncher_checks.xml
+
+checkstyle安装
+http://blog.csdn.net/gtuu0123/article/details/4891833
+
+checkstyle配置
+http://blog.csdn.net/yaodong_y/article/details/11099297
+
+
+

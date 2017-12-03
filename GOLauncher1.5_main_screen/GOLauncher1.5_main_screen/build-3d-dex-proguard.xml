@@ -1,0 +1,393 @@
+<project default="main" basedir=".">
+
+    <!-- http://www.cnblogs.com/qianxudetianxia/archive/2012/07/04/2573687.html -->
+    <property file="local.properties" />
+
+    <property name="sdk-platform-folder" value="${sdk.dir}/platforms/android-14"/> 
+    <property name="sdk-tools" value="${sdk.dir}/tools"/> 
+    <property name="android-jar" value="${sdk-platform-folder}/android.jar" />
+    
+    <condition property="exe" value=".exe" else=""><os family="windows" /></condition>
+    <condition property="bat" value=".bat" else=""><os family="windows" /></condition>
+    <condition property="projectpath" value="D:/work_space/GOLauncherEX/" else=""><os family="windows" /></condition>
+    
+    <property name="sdk-platform-tools" value="${sdk.dir}/platform-tools" />  
+    <property name="build-platform-tools" value="${sdk-platform-tools}"/> 
+    <property name="aidl" value="${build-platform-tools}/aidl${exe}" />
+    <property name="aapt" value="${build-platform-tools}/aapt${exe}" />
+    <property name="dx" value="${build-platform-tools}/dx${bat}" />
+    <property name="apkbuilder" value="${sdk-tools}/apkbuilder${bat}" />
+    <!-- 编译aidl文件所需的预处理框架文件framework.aidl -->  
+    <property name="framework-aidl" value="${sdk-platform-folder}/framework.aidl" />
+    
+    <!-- 生成R文件的相对目录 -->  
+    <property name="outdir-gen" value="gen" />  
+    <property name="outdir-aidl" value="bin/aidl" />
+    <!-- java源文件目录 -->  
+    <property name="srcdir" value="src" />  
+    
+    
+    <target name="clean">
+        <echo>start cleaning ... </echo>
+
+        <delete dir="gen"/>
+        <mkdir dir="gen" />
+
+        <delete dir="bin" />
+        <mkdir dir="bin" />
+        <mkdir dir="bin/classes" />
+
+        <delete  dir="../GOLauncherEX_ShellPlugin/gen" />
+        <mkdir dir="../GOLauncherEX_ShellPlugin/gen" />
+        <delete dir="../GOLauncherEX_ShellPlugin/bin" />
+        <mkdir dir="../GOLauncherEX_ShellPlugin/bin" />
+        
+        <delete dir="../GOLauncherEX_Main_InnerWidgets/gen" />
+        <mkdir dir="../GOLauncherEX_Main_InnerWidgets/gen" />
+        <delete dir="../GOLauncherEX_Main_InnerWidgets/bin" />
+        <mkdir dir="../GOLauncherEX_Main_InnerWidgets/bin" />
+        
+        <!-- 创建包含3DEngine的标志文件 -->
+        <delete file="assets/containshell" />
+        <delete file="assets/shellplugin.dex" />
+        <delete file="assets/shellplugin.apk" />
+        <delete file="assets/containshelldex" />
+        <touch file="assets/containshelldex" />
+        
+        <!--  解压getjar内asset文件 -->
+		<mkdir dir="getjar.folder" />
+         <unzip src="libs/GetJarSDK.jar" dest="getjar.folder" />
+         <move todir="assets" overwrite="true">
+             <fileset dir="getjar.folder/assets" />
+         </move>
+          <delete dir="getjar.folder" />
+          
+          
+        <echo>finish cleaning and create 标志文件</echo>
+        
+    </target>
+
+    <target name="gen-R" depends="clean">
+        <echo>generating R.java for project to dir gen (using aapt) ... </echo>
+        <exec executable="${aapt}">
+            <arg value="package" />
+            <arg value="-m" />
+            <arg value="-J" />
+            <arg value="gen" />
+            <arg value="-M" />
+            <arg value="AndroidManifest.xml" />
+            <arg value="-S" />
+            <arg value="res" />
+            <arg value="-S" />
+            <arg value="../GOLauncherEX_ShellPlugin/res" />
+            <arg value="-S" />
+            <arg value="../GOLauncherEX_Main_InnerWidgets/res" />
+            <arg value="-A" /> 
+            <arg value="assets" />
+            <arg value="--extra-packages" />
+            <arg value="com.gau.golauncherex.plugin.shell:com.jiubang.ggheart.innerwidgets.appgamewidget" />
+            <arg value="-I" />
+            <arg value="${android-jar}" />
+            <arg value="--auto-add-overlay" />
+        </exec>
+        
+    </target>
+
+   <target name="aidl" depends="gen-R">
+        <echo>compile .aidl to java ... </echo>
+        <apply executable="${aidl}" failonerror="true">  
+            <!-- 指定预处理文件 -->  
+            <arg value="-p${framework-aidl}"/>  
+            <!-- aidl声明的目录 -->  
+            <arg value="-I${srcdir}"/>  
+            <!-- 目标文件目录 -->  
+            <arg value="-o${outdir-aidl}"/>  
+            <!-- 指定哪些文件需要编译 -->  
+            <fileset dir="${srcdir}">  
+                <include name="**/*.aidl"/>  
+            </fileset>  
+        </apply>
+    </target>
+    
+    <target name="compile-launcher" depends="aidl">
+     	<echo>compiling launcher java files to class files (include R.java, library and the third-party jars) ... </echo>
+        <path id="project.single.launcher.libs">
+            <fileset dir="libs">
+                <include name="*.jar" />
+            </fileset>
+            <pathelement path="${sdk-tools}/support/annotations.jar" />
+        </path>
+        
+        <echo>compiling java files to class files ${srcdir} ... </echo>
+        <javac destdir="bin/classes" bootclasspath="${android-jar}" encoding="utf-8" debug="true" debuglevel="source,lines,vars" >
+            <src path="src" />
+            <src path="gen" />
+            <src path="${outdir-aidl}" />
+            <classpath refid="project.single.launcher.libs" />
+        </javac>   
+    </target>
+    
+   
+    
+    <target name="pre-compile-shellplugin"  depends="compile-launcher">
+    	<delete file="../GOLauncherEX_ShellPlugin/src/com/jiubang/shell/screen/zero/GLZeroScreenView.java"/>
+    	<copy file="../GOLauncherEX_ShellPlugin/assets/GLZeroScreenView.java" tofile="../GOLauncherEX_ShellPlugin/src/com/jiubang/shell/screen/zero/GLZeroScreenView.java"/> 
+    </target>
+    
+     <target name="compile-shellplugin" depends="pre-compile-shellplugin">
+        <echo>compiling shellplugin java files to class files (include R.java, library and the third-party jars) ... </echo>
+        <path id="project.shellplugin.libs">
+            <fileset dir="../GOLauncherEX_ShellPlugin/libs">
+                <include name="*.jar" />
+            </fileset>
+            <fileset dir="libs">
+                <include name="*.jar" />
+            </fileset>
+            <pathelement path="${sdk-tools}/support/annotations.jar" />
+        </path>
+        <javac destdir="bin/classes" bootclasspath="${android-jar}" encoding="utf-8" debug="true" debuglevel="source,lines,vars" >
+            <src path="../GOLauncherEX_ShellPlugin/src" />
+            <src path="gen" />
+            <classpath refid="project.shellplugin.libs" />
+        </javac>
+         <echo>******************compile shellplugin to bin/classes************</echo>
+     </target>
+     
+    <!-- pathelement path="../GOLauncherEX_Main_InnerWidgets/libs/mtk-framework.jar"  -->
+    <target name="compile-appgamewidget" depends="compile-shellplugin">
+     	<echo>compiling appgamewidget java files to class files (include R.java, library and the third-party jars) ... </echo>
+        <path id="project.appgamewidget">
+            <pathelement path="../GOLauncherEX_ShellPlugin/libs/shellengine.jar" />
+            <fileset dir="bin/classes">
+                <include name="*.class" />
+            </fileset>
+            <fileset dir="libs">
+                <include name="*.jar" />
+            </fileset>
+            <fileset dir="../GOLauncherEX_Main_InnerWidgets/libs">
+                <include name="*.jar" />
+            </fileset>
+        </path>
+        
+        <echo>compiling java files to class files ${srcdir} ... </echo>
+        <javac destdir="bin/classes" bootclasspath="${android-jar}" encoding="utf-8" debug="true" debuglevel="source,lines,vars" >
+            <src path="../GOLauncherEX_Main_InnerWidgets/src" />
+            <src path="gen" />
+            <classpath refid="project.appgamewidget" />
+        </javac>   
+    </target>
+       <!--  -->
+     <target name="-obfuscate" depends="compile-appgamewidget">
+        <property name="out.dir" value="bin" />
+    	<property name="out.absolute.dir" location="${out.dir}" />
+        <property name="obfuscate.absolute.dir" location="${out.absolute.dir}/proguard" />
+        <property name="preobfuscate.jar.file" value="${obfuscate.absolute.dir}/original.jar" />
+                
+        <mkdir   dir="${obfuscate.absolute.dir}" />
+        <delete file="${preobfuscate.jar.file}"/>
+        <jar basedir="bin/classes"
+            destfile="${preobfuscate.jar.file}" />
+         <echo>******************-obfuscate build original jar************</echo>
+         
+         <path id="project.all.jars.obfuscate.path">
+            <pathelement path="../GOLauncherEX_ShellPlugin/libs/shellengine.jar" />
+            <fileset dir="libs">
+                <include name="*.jar" />
+                <exclude name="GoogleAdMobAdsSdk-6.4.1.jar" />
+                <exclude name="GetJarSDK.jar" />
+            </fileset>
+        </path>
+        <property name="project.all.jars.ref" refid="project.all.jars.obfuscate.path"/>
+        <property name="obfuscated.jar.file" value="bin/proguard/obfuscated.jar" />
+        
+         <!-- Add Proguard Tasks -->
+        <property name="android.tools.dir" location="${sdk.dir}/tools" />
+        <property name="proguard.jar" location="${android.tools.dir}/proguard/lib/proguard.jar" />
+        <taskdef name="proguard" classname="proguard.ant.ProGuardTask" classpath="${proguard.jar}" />
+        
+         <!-- -printseeds   "bin/printseeds.txt"
+            -printusage   "bin/printusage.txt"
+            -printmapping   "bin/printmapping.txt"
+            -printconfiguration   "bin/printconfiguration.txt"
+            -dump   "bin/dump.txt" -->
+         <proguard>
+            -include      "proguard.cfg"
+           
+            -injars       ${preobfuscate.jar.file}
+            -injars       ${project.all.jars.ref}(!META-INF/MANIFEST.MF)
+            -outjars      ${obfuscated.jar.file}
+            -libraryjars  "${sdk-tools}/support/annotations.jar"
+            -libraryjar   "${android-jar}"
+            -libraryjar   "libs/GoogleAdMobAdsSdk-6.4.1.jar"(!META-INF/MANIFEST.MF)
+            -libraryjar   "libs/GetJarSDK.jar"(!META-INF/MANIFEST.MF)
+         </proguard>
+         
+     </target>
+     
+      <!--  -->
+     <target name = "-pre-dex" depends="-obfuscate">
+         
+         <!-- 首先解压缩出jar包，然后剪切出其中shell相关文件到其他目录，再分别重新jar包处理 -->
+         <property name="obfuscated.launcher.folder" value="bin/proguard/obfuscated-launcher" />
+         <property name="obfuscated.launcher.jarfile" value="${obfuscated.launcher.folder}.jar" />
+         <property name="obfuscated.shell.folder" value="bin/proguard/obsuscated-shell" />
+         <property name="obfuscated.shell.jarfile" value="${obfuscated.shell.folder}.jar" />
+         
+         <delete dir="${obfuscated.launcher.folder}" />
+         <delete dir="${obfuscated.shell.folder}" />
+         <unzip src="bin/proguard/obfuscated.jar" dest="${obfuscated.launcher.folder}" />
+         <move todir="${obfuscated.shell.folder}/com/jiubang/shell">
+             <fileset dir="${obfuscated.launcher.folder}/com/jiubang/shell" />
+         </move>
+         <!-- <move todir="${obfuscated.shell.folder}/com/jiubang/ggheart/innerwidgets/appgamewidget">
+             <fileset dir="${obfuscated.launcher.folder}/com/jiubang/ggheart/innerwidgets/appgamewidget" />
+         </move> -->
+         
+         <delete dir="${obfuscated.launcher.folder}/com/jiubang/ggheart/zeroscreen" />
+         <delete dir="${obfuscated.shell.folder}/com/jiubang/shell/screen/zero/navigation" />
+         <delete dir="${obfuscated.shell.folder}/com/jiubang/shell/screen/zero/search" />
+            
+         <echo>==========================delete=======================</echo>
+         
+         <jar destfile="${obfuscated.launcher.jarfile}" basedir="${obfuscated.launcher.folder}" />
+         <jar destfile="${obfuscated.shell.jarfile}" basedir="${obfuscated.shell.folder}" />
+         
+     </target>
+     
+     <target name = "-build-shellplugin" depends="-pre-dex">
+        <echo>dxing shellplugin to zipaliginapk ... </echo> 
+         <exec executable="${dx}"  failonerror="true">
+            <arg value="--dex" />
+            <arg value="--output=${projectpath}bin/shellplugin.dex" />
+            <!-- <arg value="${projectpath}bin/aidl"/> -->
+            <!-- <arg value="libs" /> -->
+            <arg value="${projectpath}${obfuscated.shell.jarfile}" />
+        </exec>
+        <echo>building unsigned.apk of project_shellplugin... </echo>
+        <exec executable="${apkbuilder}"  failonerror="true">
+            <arg value="${projectpath}bin/shellplugin_unsigned.apk" />
+            <arg value="-u" />
+            <arg value="-z" />
+            <arg value="${projectpath}assets/containshelldex" />
+            <arg value="-f" />
+            <arg value="${projectpath}bin/shellplugin.dex" />
+        </exec>
+        
+        <echo>signing the unsigned apk to shellplugin apk ... </echo>
+        <exec executable="jarsigner">
+            <arg value="-keystore" />
+            <arg value="./3g.keystore" />
+            <arg value="-storepass" />
+	    	<arg value="androidheart" />
+            <arg value="-keypass" />
+	    	<arg value="androidheart" />
+            <arg value="-signedjar" />
+            <arg value="${projectpath}bin/shellplugin_signed.apk" />
+            <arg value="${projectpath}bin/shellplugin_unsigned.apk" />
+	    	<arg value="androidheart" />
+        </exec>
+        
+        <echo>zipalign the shellplugin apk to final product apk ... </echo>
+        <exec executable="zipalign">
+            <arg value="-f" />
+            <arg value="-v" />
+            <arg value="4" />
+            <arg value="${projectpath}bin/shellplugin_signed.apk" />
+	    	<arg value="${projectpath}bin/shellplugin_zipaligin.apk" />
+        </exec>
+        
+        <copy file="${projectpath}bin/shellplugin_zipaligin.apk" tofile="${projectpath}assets/shellplugin.apk" />
+        <echo>copy shellplugin apk to assets folder ... </echo>
+     </target>
+     
+     <target name = "-dexlauncher" depends="-build-shellplugin">
+        <echo>packaging class files of golauncher to calsses.dex ... </echo>
+        <exec executable="${dx}"  failonerror="true">
+            <arg value="--dex" />
+            <arg value="--output=${projectpath}bin/classes.dex" />
+            <arg value="${projectpath}bin/aidl"/>
+            <!-- <arg value="libs" /> -->
+            <arg value="${projectpath}${obfuscated.launcher.jarfile}" />
+            <arg value="libs/GoogleAdMobAdsSdk-6.4.1.jar" />
+            <arg value="libs/GetJarSDK.jar" />
+            <!-- <arg value="${android-support-v4.jar.file}" /> -->
+        </exec>
+        
+     </target>
+     
+     <target name = "-zipallresouces" depends="-build-shellplugin">
+
+        <echo>packaging all resource (include res, assets, AndroidManifest.xml, etc.) to res.zip ... </echo>
+        <exec executable="${aapt}"  failonerror="true">
+            <arg value="package" />
+            <arg value="-f" />
+            <arg value="-M" />
+            <arg value="AndroidManifest.xml" />
+            <arg value="-S" />
+            <arg value="res" />
+            <arg value="-S" />
+            <arg value="../GOLauncherEX_ShellPlugin/res" />
+            <arg value="-S" />
+            <arg value="../GOLauncherEX_Main_InnerWidgets/res" />
+            <arg value="-A" />
+            <arg value="assets" />
+            <arg value="-I" />
+            <arg value="${android-jar}" />
+            <arg value="-F" />
+            <arg value="bin/res.zip" />
+            <arg value="--auto-add-overlay" />
+        </exec>
+         
+        <echo>after aapt package resource, delete Contain 3D file flag</echo>
+        <delete file="assets/containshelldex" />
+        <delete file="${projectpath}assets/shellplugin.apk" />
+        <delete dir="assets/scopes" />
+        <delete file="assets/alertIcon.png" />
+        <delete file="assets/config.ini" />
+        <delete file="assets/errorMessage.html" />
+        <delete file="assets/getjaricon.png" />
+        <delete file="assets/jquery-1.7.1.min.js" />
+        <delete file="assets/rewardsSprite.png" />
+     </target>
+     
+     
+     <target name="main" depends="-dexlauncher, -zipallresouces">
+     
+        <echo>building unsigned.apk ... </echo>
+        <exec executable="${apkbuilder}">
+            <arg value="${projectpath}bin/unsigned.apk" />
+            <arg value="-u" />
+            <arg value="-z" />
+            <arg value="${projectpath}bin/res.zip" />
+            <arg value="-f" />
+            <arg value="${projectpath}bin/classes.dex" />
+            <arg value="-nf"/>  
+      		<arg value="${projectpath}libs"/> 
+        </exec>
+        
+        <echo>signing the unsigned apk to final product apk ... </echo>
+        <exec executable="jarsigner">
+            <arg value="-keystore" />
+            <arg value="./3g.keystore" />
+            <arg value="-storepass" />
+	    	<arg value="androidheart" />
+            <arg value="-keypass" />
+	    	<arg value="androidheart" />
+            <arg value="-signedjar" />
+            <arg value="${projectpath}bin/launcher_release.apk" />
+            <arg value="${projectpath}bin/unsigned.apk" />
+	    	<arg value="androidheart" />
+        </exec>
+        
+        <echo>zipalign the signed apk to final product apk ... </echo>
+        <exec executable="zipalign">
+            <arg value="-f" />
+            <arg value="-v" />
+            <arg value="4" />
+            <arg value="bin/launcher_release.apk" />
+	    	<arg value="bin/golauncher_release_align.apk" />
+        </exec>
+        
+        <echo>done.</echo>
+    </target>
+</project>

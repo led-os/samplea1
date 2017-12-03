@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.ggheart.apps.desks.diy.frames.dock.DefaultStyle.SideDockGuideMaskView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/mask"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dock_bg_height"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="18dp"
+        android:background="@drawable/dock_mask_bg" >
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/close_side_dock_guide" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/close"
+            android:gravity="center_vertical"
+            android:text="@string/side_dock_mask_text"
+            android:textColor="@color/appgame_download_btn_white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</com.jiubang.ggheart.apps.desks.diy.frames.dock.DefaultStyle.SideDockGuideMaskView>
+<!--  -->

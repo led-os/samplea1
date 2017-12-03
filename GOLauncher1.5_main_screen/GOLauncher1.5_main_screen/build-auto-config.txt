@@ -1,0 +1,10 @@
+PROJECT_GOLAUNCHER=GOLauncherEX
+PROJECT_SHELLPLUGIN=GOLauncherEX_ShellPlugin
+PROJECT_APPGAMEWIDGET=GOLauncherEX_Main_InnerWidgets
+
+SVNLOG_FILE=GOLauncherEX/svnchangelog.txt
+SVN_LOG_GOLAUNCHER=svnchangelog-golauncherex.txt
+SVN_LOG_SHELLPLUGIN=svnchangelog-shellplugin.txt
+SVN_LOG_APPGAMEWIDGET=svnchangelog-appgamewidget.txt
+
+ANT_BUILD_PATH=/usr/bin/ant

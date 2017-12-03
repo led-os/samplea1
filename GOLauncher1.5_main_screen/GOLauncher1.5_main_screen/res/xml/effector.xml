@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<effectors xmlns:launcher="http://schemas.android.com/apk/res/com.gau.go.launcherex" >
+    
+    <!-- effectorType的定义规则如下：随机和随机自定义为0，单元格特效GridScreenEffector类型为1，整屏特效SubScreenEffector类型为2 -->
+    <!-- isBothSupprot的定义规则如下：true表示该特效在2D和3D上都支持，false表示该特效只在3D上支持，该属性默认为false -->
+    
+    <!-- 随机自定义 -->
+    <effector
+        launcher:effectorId="-2"
+        launcher:effectorName="effect_type_random_custom"
+        launcher:drawableName="screenedit_effect03_userdefine"
+        launcher:isPrime="false" 
+        launcher:effectorType="0"
+        launcher:isBothSupport="true" />
+    
+    <!-- 随机 -->
+    <effector
+        launcher:effectorId="-1"
+        launcher:effectorName="effect_type_random"
+        launcher:drawableName="screenedit_effect02_radom"
+        launcher:isPrime="false" 
+        launcher:effectorType="0"
+        launcher:isBothSupport="true" />
+
+    <!-- 平滑（整屏特效） -->
+    <effector
+        launcher:effectorId="0"
+        launcher:effectorName="effect_type_smooth"
+        launcher:drawableName="screenedit_effect01_moren"
+        launcher:isPrime="false" 
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+    <!-- 盒子（外）（整屏特效） -->
+    <effector
+        launcher:effectorId="1"
+        launcher:effectorName="effect_type_cube_outside"
+        launcher:drawableName="screenedit_effect10_boxout"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+    <!-- 翻转（带壁纸）（整屏特效） -->
+    <effector
+        launcher:effectorId="2"
+        launcher:effectorName="effect_type_flip_with_wallpaper"
+        launcher:drawableName="screenedit_effect07_wallpicroll"
+        launcher:isPrime="false" 
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+    <!-- 弹跳（整屏特效） -->
+    <effector
+        launcher:effectorId="3"
+        launcher:effectorName="effect_type_bounce"
+        launcher:drawableName="screenedit_effect11_bounce"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+    <!-- 翻滚（整屏特效） -->
+    <effector
+        launcher:effectorId="4"
+        launcher:effectorName="effect_type_roll"
+        launcher:drawableName="screenedit_effect05_roll"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+    <!-- 推压（整屏特效） -->
+    <effector
+        launcher:effectorId="5"
+        launcher:effectorName="effect_type_bulldoze"
+        launcher:drawableName="screenedit_effect12_push"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+    <!-- 盒子（内）（整屏特效） -->
+    <effector
+        launcher:effectorId="6"
+        launcher:effectorName="effect_type_cube_inside"
+        launcher:drawableName="screenedit_effect09_boxin"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+    <!-- 风车（整屏特效） -->
+     <effector
+        launcher:effectorId="7"
+        launcher:effectorName="effect_type_windmill"
+        launcher:drawableName="screenedit_effect08_windmills"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+     
+     <!-- 翻转（简单）（整屏特效） -->
+     <effector
+        launcher:effectorId="8"
+        launcher:effectorName="effect_type_flip_simple"
+        launcher:drawableName="screenedit_effect06_easyroll"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+     <!-- 波浪（整屏特效） -->
+     <effector
+        launcher:effectorId="9"
+        launcher:effectorName="effect_type_wave"
+        launcher:drawableName="screenedit_effect04_wave"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+     <!-- 卡片堆（整屏特效） -->
+     <effector
+        launcher:effectorId="10"
+        launcher:effectorName="effect_type_stack"
+        launcher:drawableName="screenedit_effect_stack"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+     
+     <!-- 双子星（单元格特效） -->
+     <effector
+        launcher:effectorId="11"
+        launcher:effectorName="effect_type_binary_star"
+        launcher:drawableName="screenedit_effect13_doublechild"
+        launcher:isPrime="false"
+        launcher:effectorType="1" 
+        launcher:isBothSupport="true" />
+    
+     <!-- 咕噜咕噜滚（单元格特效） -->
+     <effector
+        launcher:effectorId="12"
+        launcher:effectorName="effect_type_chariot"
+        launcher:drawableName="screenedit_effect14_gun"
+        launcher:isPrime="false"
+        launcher:effectorType="1" 
+        launcher:isBothSupport="true" />
+     
+     <!-- 百叶窗（单元格特效） -->
+     <effector
+        launcher:effectorId="13"
+        launcher:effectorName="effect_type_shutter"
+        launcher:drawableName="screenedit_effect15_shutter"
+        launcher:isPrime="false"
+        launcher:effectorType = "1" 
+        launcher:isBothSupport="true" />
+     
+     <!-- 弦效果（单元格特效） -->
+     <effector
+        launcher:effectorId="14"
+        launcher:effectorName="effect_type_chord"
+        launcher:drawableName="screenedit_effect16_xuan"
+        launcher:isPrime="false"
+        launcher:effectorType="1" 
+        launcher:isBothSupport="true" />
+     
+     <!-- 圆柱（单元格特效） -->
+      <effector
+        launcher:effectorId="15"
+        launcher:effectorName="effect_type_cylinder"
+        launcher:drawableName="screenedit_effect17_cylinder"
+        launcher:isPrime="false"
+        launcher:effectorType="1" 
+        launcher:isBothSupport="true" />
+    
+     <!-- 球（单元格特效） -->
+     <effector
+        launcher:effectorId="16"
+        launcher:effectorName="effect_type_sphere"
+        launcher:drawableName="screenedit_effect18_ball"
+        launcher:isPrime="false"
+        launcher:effectorType="1" 
+        launcher:isBothSupport="true" />
+    
+     <!-- 渐影（整屏特效） -->
+     <effector
+        launcher:effectorId="17"
+        launcher:effectorName="effect_type_gradual"
+        launcher:drawableName="screenedit_effect17dodo"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+     <!-- 玻璃（整屏特效） -->
+     <effector
+        launcher:effectorId="18"
+        launcher:effectorName="effect_type_glass"
+        launcher:drawableName="screenedit_effect18glass"
+        launcher:isPrime="false"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+     <!-- 淡入淡出（整屏特效） -->
+     <effector
+        launcher:effectorId="19"
+        launcher:effectorName="effect_type_crossfade"
+        launcher:drawableName="screenedit_effect_crossfade"
+        launcher:isPrime="true"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+     <!-- 时光隧道（整屏特效） -->
+     <effector
+        launcher:effectorId="20"
+        launcher:effectorName="effect_type_fly_in"
+        launcher:drawableName="screenedit_effect_flyin"
+        launcher:isPrime="true"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+     
+     <!-- 翻页（整屏特效） -->
+     <effector
+        launcher:effectorId="21"
+        launcher:effectorName="effect_type_pageturn"
+        launcher:drawableName="screenedit_effect_poke"
+        launcher:isPrime="true"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+     
+     <!-- 交替（整屏特效） -->
+     <effector
+        launcher:effectorId="22"
+        launcher:effectorName="effect_type_curve"
+        launcher:drawableName="screenedit_effect_curve"
+        launcher:isPrime="true"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="true" />
+    
+     <!-- 水晶（3D）（整屏特效） -->
+     <effector
+        launcher:effectorId="23"
+        launcher:effectorName="effect_type_crystal_3d"
+        launcher:drawableName="screenedit_effect_crystal"
+        launcher:isPrime="true"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="false" />
+     
+     <!-- 布料（3D）（整屏特效） -->
+     <effector
+        launcher:effectorId="24"
+        launcher:effectorName="effect_type_cloth_3d"
+        launcher:drawableName="screenedit_effect_cloth"
+        launcher:isPrime="true"
+        launcher:effectorType="2" 
+        launcher:isBothSupport="false" />
+     
+     <!-- snake effector -->
+     <effector
+        launcher:effectorId="25"
+        launcher:effectorName="effect_type_snake_3d"
+        launcher:drawableName="screenedit_effect_snake"
+        launcher:isPrime="true"
+        launcher:effectorType="1" 
+        launcher:isBothSupport="false" />
+    
+</effectors>

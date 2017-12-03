@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dingzijian -->
+    <!-- 更新提示log目前最多支持8条更新提示，如需减少条数，直接把updatelog的值置为""即可，无需删除 -->
+    <string name="notice_url">"http://weibo.com/golauncherex"</string>
+    <string name="updatelog1">1. (새 기능)내장 스위치 위젯(\"메뉴-추가-GO위젯\"에서 추가하세요)</string>
+    <string name="updatelog2">2. (최적화)GO위젯 네트워크 관련 문제</string>
+    <string name="updatelog3">3. (수정)기본 홈으로 설정할수 없는 문제</string>
+    <string name="updatelog4">4. (수정)독바의 아이콘이 멈추는 문제</string>
+    <string name="updatelog5"></string>
+    <string name="updatelog6"></string>
+    <string name="updatelog7"></string>
+    <string name="updatelog8"></string>
+    <string name="guide_text1">Hello,</string>
+    <string name="guide_text2">I am GO Launcher...</string>
+    <string name="guide_text3">Updated!</string>
+    <string name="transparent_url">http://crowdin.net/project/golauncherex/</string>
+
+</resources>

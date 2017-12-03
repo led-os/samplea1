@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<recommend_gowidget>
+    
+    <!-- GO锁屏 -->
+	<item pkgname="com.jiubang.goscreenlock"
+		  widgetname="go_locker_title"
+		  imgname="plugin_manage_fullscreen"
+		  imgurl="http://godfs.3g.cn/dynamic/resdown/201308061458/Banner.jpg"
+		  ftp="http://godfs.3g.cn/soft/golocker/GOLocker.apk"
+		  market="http://play.google.com/store/apps/details?id=com.jiubang.goscreenlock&amp;referrer=utm_source%3DGOLauncherWidget%26utm_medium%3Dbanner%26utm_campaign%3DGOLauncher" >
+	</item>
+    
+	<!-- 全屏插件 -->
+	<item pkgname="com.gau.go.toucherpro"
+		  widgetname="touchhelper_title"
+		  imgname="plugin_manage_fullscreen"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182020/go_plugins_toucher.jpg"
+		  ftp="http://godfs.3g.cn/dynamic/resdown/201304011823/GOTouch_release.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.toucherpro&amp;referrer=utm_source%3Dgolauncherplugin%26utm_medium%3Dfeatured%26utm_campaign%3Dmenupluginfeatured"
+		  >
+	</item>
+	
+	<!-- 资源管理器 -->
+	<item pkgname="com.gau.golauncherex.mediamanagement"
+		  widgetname="mediamanager_tilte"
+		  imgname="plugin_manage_mediamanager"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182018/go_plugins_mediamananger.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/go_media_manager.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.golauncherex.mediamanagement"
+		  >
+	</item>
+	
+	<!-- 多屏多壁纸 -->
+	<item pkgname="com.go.multiplewallpaper"
+		  widgetname="multiwallpaper_title"
+		  imgname="plugin_manage_multiwallpaper"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182018/go_plugins_multiple_wallpaper.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/go_multiple_wallpaper.apk"
+		  market="http://play.google.com/store/apps/details?id=com.go.multiplewallpaper">
+	</item>
+	
+	<!-- 消息提示器 -->
+	<item pkgname="com.gau.golauncherex.notification"
+		  widgetname="menuitem_notification"
+		  imgname="plugin_manage_notification"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304191433/go_plugins_notification.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/com.gau.golauncherex.notification.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.golauncherex.notification">
+	</item>
+	
+	<!-- UI3.0 -->
+	<item pkgname="com.gau.go.launcherex.theme.defaultthemethree"
+		  widgetname="ui30_title"
+		  imgname="plugin_manage_ui30"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182020/go_plugins_UI3.0.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/ThemeUI3.0.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.theme.defaultthemethree">
+	</item>
+	
+	<!-- 文件全能王 -->
+	<item pkgname="com.youmi.filemaster"
+		  widgetname="plugin_manage_filemaster"
+		  imgname=""
+		  imgurl="http://godfs.3g.cn/dynamic/resdown/201307261717/GO_FileMaster.jpg"
+		  ftp=""
+		  market="https://play.google.com/store/apps/details?id=com.youmi.filemaster">
+	</item>
+	
+</recommend_gowidget>

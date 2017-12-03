@@ -1,0 +1,107 @@
+<project default="build_apk" basedir=".">
+          
+       <!--  -->
+     <target name="-obfuscate" depends="compile-appgamewidget">
+        <property name="out.dir" value="bin" />
+    	<property name="out.absolute.dir" location="${out.dir}" />
+        <property name="obfuscate.absolute.dir" location="${out.absolute.dir}/proguard" />
+        <property name="preobfuscate.jar.file" value="${obfuscate.absolute.dir}/original.jar" />
+                
+        <mkdir   dir="${obfuscate.absolute.dir}" />
+        <delete file="${preobfuscate.jar.file}"/>
+        <jar basedir="bin/classes"
+            destfile="${preobfuscate.jar.file}" />
+         <echo>******************-obfuscate build original jar************</echo>
+         
+         <path id="project.all.jars.obfuscate.path">
+            <pathelement path="../GOLauncherEX_ShellPlugin/libs/shellengine.jar" />
+            <fileset dir="libs">
+                <include name="*.jar" />
+                <exclude name="GoogleAdMobAdsSdk-6.4.1.jar" />
+                <exclude name="GetJarSDK.jar" />
+            </fileset>
+        </path>
+        <property name="project.all.jars.ref" refid="project.all.jars.obfuscate.path"/>
+        <property name="obfuscated.jar.file" value="bin/proguard/obfuscated.jar" />
+        
+         <!-- Add Proguard Tasks -->
+        <property name="android.tools.dir" location="${sdk.dir}/tools" />
+        <property name="proguard.jar" location="${android.tools.dir}/proguard/lib/proguard.jar" />
+        <taskdef name="proguard" classname="proguard.ant.ProGuardTask" classpath="${proguard.jar}" />
+        
+        <!--
+        <jar destfile="${obfuscated.jar.file}" >
+            <fileset dir="bin/classes" />
+            <zipfileset includes="**/*.class" src="../GOLauncherEX_ShellPlugin/libs/shellengine.jar"/>
+            <restrict>
+                <archives>
+                    <zips>
+                        <fileset dir="libs">
+                            <include name="*.jar" />
+                            <exclude name="GoogleAdMobAdsSdk-6.4.1.jar" />
+                        </fileset>
+                    </zips>
+                </archives>
+            </restrict>
+        </jar> -->
+        
+        <echo>***begin to proguard but not to obfuscate************</echo>
+        
+         <proguard>
+            -include      "proguard.cfg"
+            -dontobfuscate
+            -injars       ${preobfuscate.jar.file}
+            -injars       ${project.all.jars.ref}(!META-INF/MANIFEST.MF)
+            -outjars      ${obfuscated.jar.file}
+            -libraryjars  "${sdk-tools}/support/annotations.jar"
+            -libraryjar   "${android-jar}"
+            -libraryjar   "libs/GoogleAdMobAdsSdk-6.4.1.jar"(!META-INF/MANIFEST.MF)
+            -libraryjar   "libs/GetJarSDK.jar"(!META-INF/MANIFEST.MF)
+         </proguard> 
+         
+     </target>
+     
+     <target name = "-zipallresouces" depends="-build-shellplugin">
+        <echo>不混淆模式，增加 debug-mode属性... </echo>
+        <echo>packaging all resource (include res, assets, AndroidManifest.xml, etc.) to res.zip ... </echo>
+        <exec executable="${aapt}"  failonerror="true">
+            <arg value="package" />
+            <arg value="-f" />
+            <arg value="--debug-mode" />
+            <arg value="-M" />
+            <arg value="AndroidManifest.xml" />
+            <arg value="-S" />
+            <arg value="res" />
+            <arg value="-S" />
+            <arg value="../GOLauncherEX_ShellPlugin/res" />
+            <arg value="-S" />
+            <arg value="../GOLauncherEX_Main_InnerWidgets/res" />
+            <arg value="-A" />
+            <arg value="assets" />
+            <arg value="-I" />
+            <arg value="${android-jar}" />
+            <arg value="-F" />
+            <arg value="bin/res.zip" />
+            <arg value="--auto-add-overlay" />
+        </exec>
+         
+        <echo>after aapt package resource, delete Contain 3D file flag</echo>
+        <delete file="assets/containshelldex" />
+        <delete file="${projectpath}assets/shellplugin.apk" />
+         <delete dir="assets/scopes" />
+        <delete file="assets/alertIcon.png" />
+        <delete file="assets/config.ini" />
+        <delete file="assets/errorMessage.html" />
+        <delete file="assets/getjaricon.png" />
+        <delete file="assets/jquery-1.7.1.min.js" />
+        <delete file="assets/rewardsSprite.png" />
+     </target>
+     
+     
+     <import file="build-3d-dex-proguard.xml" />
+    
+     <target name="build_apk" depends="main">
+        <echo>Build no proguard apk file finish... </echo>
+     </target>
+
+</project>

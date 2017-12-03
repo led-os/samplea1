@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/message_center_topbar_container_height"
+    android:id="@+id/message_center_topbar"
+    android:background="@drawable/message_center_topbar_bg_white" >
+
+    <RelativeLayout
+        android:id="@+id/message_center_topbar_back_layout"
+        android:layout_width="wrap_content"
+        android:background="@drawable/message_center_onclick_selector"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/message_center_topbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/message_center_topbar_back" />
+
+        <ImageView
+            android:id="@+id/message_center_topbar_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/message_center_topbar_back"
+            android:src="@drawable/message_center_topbar_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message_center_topbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/message_center_topbar_back_layout"
+        android:text="@string/message_center_title"
+        android:textColor="#000000"
+        android:textSize="@dimen/message_center_topbar_title_size" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/message_center_topbar_delete_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/message_center_topbar_delete_btn"
+            android:layout_width="wrap_content"
+            android:background="@drawable/message_center_onclick_selector"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:src="@drawable/message_center_topbar_delete_close" />
+    </RelativeLayout>
+
+</RelativeLayout>

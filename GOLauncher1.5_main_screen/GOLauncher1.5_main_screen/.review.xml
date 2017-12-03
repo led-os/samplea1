@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:review xmlns:ns="http://reviewclipse.org/model/xml">
+  <period startDate="2014-03-25T22:54:29.833+08:00">
+    <assignment>
+      <author>caoyaming</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>chenguanyu</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>chenshihang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>dengdazhong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>dingzijian</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>guoyiqing</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>jiangchao</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>jiangxuwen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>licanhui</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>lichong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liucongju</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liuheng</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liulixia</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liuxinyang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>makai</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>nixiaozhen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>panghuajuan</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>pinghu</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>rongjinsong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>ruxueqin</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>wangzhuobin</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>wuziyi</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>xiangliang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>yangguanxiang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>yejijiong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zengyingzhen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zhangxi</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zhengxiangcan</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zhouxuewen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zhujian</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zouguiquan</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+  </period>
+  <period startDate="2014-03-25T23:16:03.932+08:00">
+    <assignment>
+      <author>caoyaming</author>
+      <reviewer>huyong</reviewer>
+      <filter>*.java</filter>
+    </assignment>
+    <assignment>
+      <author>chenguanyu</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>chenshihang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>dengdazhong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>dingzijian</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>guoyiqing</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>jiangchao</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>jiangxuwen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>licanhui</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>lichong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liucongju</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liuheng</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liulixia</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liuxinyang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>makai</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>nixiaozhen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>panghuajuan</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>pinghu</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>rongjinsong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>ruxueqin</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>wangzhuobin</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>wuziyi</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>xiangliang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>yangguanxiang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>yejijiong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zengyingzhen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zhangxi</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zhengxiangcan</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zhouxuewen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zhujian</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zouguiquan</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+  </period>
+  <period startDate="2014-03-28T15:59:09.963+08:00">
+    <assignment>
+      <author>caoyaming</author>
+      <reviewer>huyong</reviewer>
+      <filter>*.java</filter>
+    </assignment>
+    <assignment>
+      <author>chenshihang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>dengdazhong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>dingzijian</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>guoyiqing</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>jiangxuwen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>licanhui</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>lichong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liucongju</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liuheng</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liulixia</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>liuxinyang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>makai</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>nixiaozhen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>rongjinsong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>ruxueqin</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>wangzhuobin</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>wuziyi</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>xiangliang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>yangguanxiang</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>yejijiong</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zengyingzhen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zhengxiangcan</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zhouxuewen</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+    <assignment>
+      <author>zouguiquan</author>
+      <reviewer>huyong</reviewer>
+      <filter xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </assignment>
+  </period>
+  <user name="zengyingzhen"/>
+  <user name="caoyaming"/>
+  <user name="nixiaozhen"/>
+  <user name="lichong"/>
+  <user name="zhouxuewen"/>
+  <user name="guoyiqing"/>
+  <user name="rongjinsong"/>
+  <user name="huyong"/>
+  <user name="yangguanxiang"/>
+  <user name="zouguiquan"/>
+  <user name="liucongju"/>
+  <user name="dengdazhong"/>
+  <user name="wuziyi"/>
+  <user name="liuxinyang"/>
+  <user name="yejijiong"/>
+  <user name="wangzhuobin"/>
+  <user name="zhengxiangcan"/>
+  <user name="dingzijian"/>
+  <user name="liuheng"/>
+  <user name="ruxueqin"/>
+  <user name="makai"/>
+  <user name="zhujian"/>
+  <user name="liulixia"/>
+  <user name="chenshihang"/>
+  <user name="licanhui"/>
+  <user name="zhangxi"/>
+  <user name="panghuajuan"/>
+  <user name="jiangxuwen"/>
+  <user name="jiangchao"/>
+  <user name="chenguanyu"/>
+  <user name="xiangliang"/>
+  <user name="pinghu"/>
+</ns:review>

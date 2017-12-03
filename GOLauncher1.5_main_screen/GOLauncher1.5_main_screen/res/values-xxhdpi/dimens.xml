@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dock_bg_height">80dip</dimen>
+    <dimen name="screen_long_end_padding_port">80dip</dimen>
+    <dimen name="screen_long_end_padding_land">80dip</dimen>
+    
+    <!-- 更换图标 -->
+    <dimen name="change_icon_title_bar_height">56dp</dimen>
+    <dimen name="bladeview_width">7dp</dimen>
+    <dimen name="bladeview_height">30dp</dimen>
+</resources>

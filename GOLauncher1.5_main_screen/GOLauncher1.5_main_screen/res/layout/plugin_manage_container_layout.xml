@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.ggheart.apps.desks.diy.plugin.PluginManageContainer 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/theme_bg"
+    android:paddingBottom="16dp">
+    <!-- loading等待界面 -->
+	<com.jiubang.ggheart.components.DeskTextView 
+	    android:id="@+id/nothemes"
+	    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/no_featured_themes"
+        android:textSize="13sp"
+        android:layout_marginLeft="20dip"
+        android:textColor="#888888"
+        android:visibility="gone"/>
+    <com.jiubang.ggheart.apps.gowidget.gostore.component.ThemeStoreProgressBar
+        android:id="@+id/theme_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/themestore_btmprogress"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="6dp"
+            android:visibility="visible" />
+
+        <com.jiubang.ggheart.components.DeskTextView
+            android:id="@+id/themestore_btmProgress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="@string/loading"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </com.jiubang.ggheart.apps.gowidget.gostore.component.ThemeStoreProgressBar>
+
+     <GridView
+            android:id="@+id/download_gowidget_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:verticalSpacing="16dp"
+	        android:columnWidth="154dp"
+	        android:stretchMode="spacingWidth"
+	        android:layout_marginTop="16dp"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginRight="16dp"
+	        android:fadingEdge="none"
+            android:numColumns="auto_fit" >"
+      </GridView>
+	
+     <RelativeLayout
+		  android:id="@+id/empty_msg"
+		  android:layout_width="match_parent"
+		  android:layout_height="match_parent"
+		  android:gravity="center"
+		  android:visibility="gone"
+		  >
+		  <ImageView
+		    android:id="@+id/nomsgimageview"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:background="@drawable/themestore_nodata_all"
+		  	android:layout_alignParentTop="true"
+		  	android:layout_centerHorizontal="true"
+		  />
+		  <com.jiubang.ggheart.components.DeskTextView
+		    android:id="@+id/nomsgtextview"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:paddingTop="25dp"
+		  	android:layout_below="@id/nomsgimageview"
+		  	android:layout_centerHorizontal="true"
+		  	android:textColor="#676767"
+		  	android:textSize="16sp"
+		  	android:text="您还没有下载插件哦！"
+		  	android:gravity="center_horizontal"
+		  />
+	</RelativeLayout>
+</com.jiubang.ggheart.apps.desks.diy.plugin.PluginManageContainer>

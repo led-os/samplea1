@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_manager_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/update_all_layout"
+            android:background="@color/app_manager_bg"
+            android:cacheColorHint="#00000000"
+            android:clickable="false"
+            android:divider="#000000"
+            android:listSelector="@drawable/transparent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/network_tips_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/update_all_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="59dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/mytheme_bottom_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jiubang.ggheart.components.DeskButton
+                android:id="@+id/btn_update_all"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/app_manager_update_btn_bg"
+                android:text="@string/app_manage_update_all"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</merge>

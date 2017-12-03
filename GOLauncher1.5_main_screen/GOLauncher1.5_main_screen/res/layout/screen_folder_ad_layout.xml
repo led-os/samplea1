@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26.7dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal" >
+
+        <com.jiubang.ggheart.components.DeskTextView
+            android:id="@+id/folder_ad_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableLeft="@drawable/folder_recommended__heart"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical|left"
+            android:shadowColor="#B2000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:text="@string/folder_recomended_text"
+            android:textColor="#E1E1E1"
+            android:textSize="13.3sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/folder_recommended_line" />
+    </LinearLayout>
+
+    <com.jiubang.ggheart.apps.desks.diy.frames.screen.FolderAdContentView
+        android:id="@+id/folder_ad_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.jiubang.ggheart.apps.desks.diy.frames.screen.DesktopIndicator
+            android:id="@+id/folder_ad_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/folder_edit_indicator_hight" />
+
+        <com.jiubang.ggheart.components.MutilCheckGridView
+            android:id="@+id/folder_ad_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.jiubang.ggheart.apps.desks.diy.frames.screen.FolderAdContentView>
+
+</LinearLayout>

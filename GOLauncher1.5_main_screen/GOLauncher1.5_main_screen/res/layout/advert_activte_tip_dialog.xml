@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+            android:id="@+id/message_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="56dip"
+                android:layout_height="56dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="21.3dip"
+                android:layout_marginTop="21.3dip"
+                android:background="@drawable/default_icon" />
+
+            <com.jiubang.ggheart.components.DeskTextView
+                android:id="@+id/dialog_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp"
+                style="@style/launcher_dialog_content_text" />
+        </LinearLayout>
+
+</LinearLayout>

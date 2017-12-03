@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_layout"
+    android:gravity="center" >
+
+    <ListView
+        android:id="@+id/desk_setting_dialog_singleormulti_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/folder_button_line"
+        android:dividerHeight="0.67dp"
+        android:listSelector="@drawable/change_icon_tab_selector" />
+
+</LinearLayout>

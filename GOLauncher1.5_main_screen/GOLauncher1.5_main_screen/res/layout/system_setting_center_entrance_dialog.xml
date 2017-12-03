@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myAndroid="http://schemas.android.com/apk/res/com.gau.go.launcherex"
+    android:id="@+id/screen_rows_cols"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    myAndroid:dialogTitle="@string/system_settings_dialog_title"
+    myAndroid:dialogType="SINGLE_CHOICE_WITH_CHECKBOX"
+    myAndroid:listEntries="@array/system_setting_center_dialog"
+    myAndroid:listEntryValues="@array/system_setting_center_dialog_value"
+    myAndroid:singleDialogTips="@string/setting_dialog_dont_show_again" />

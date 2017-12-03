@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myAndroid="http://schemas.android.com/apk/res/com.gau.go.launcherex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/desk_setting_bg_color"
+    android:orientation="vertical" >
+
+    <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingPageTitleView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        myAndroid:image="@drawable/desk_setting_page_title_back_new"
+        myAndroid:titleBg="@drawable/desk_setting_page_title_bg_new"
+        myAndroid:titleHeight="@dimen/desk_setting_pagetitle_height_new"
+        myAndroid:titleShowLogo="true"
+        myAndroid:titleText="@string/pref_title_dock"
+        myAndroid:titleTextColor="@color/desk_setting_page_title_color_new"
+        myAndroid:titleTextLineHeight="0dp"
+        myAndroid:titleTextSize="@dimen/desk_setting_page_title_text_size" />
+
+    <com.jiubang.ggheart.apps.desks.Preferences.view.TranslucentScrollView
+        android:layout_width="fill_parent"
+        android:paddingLeft="@dimen/desk_setting_view_padding"
+        android:paddingRight="@dimen/desk_setting_view_padding"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/desk_setting_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/desk_setting_view_margin_bottom"
+            android:layout_marginTop="@dimen/desk_setting_view_padding_top"
+            android:background="@drawable/desk_setting_group_bg"
+            android:orientation="vertical" >
+
+            <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                android:id="@+id/side_dock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                myAndroid:titleText="@string/desksetting_title_side_dock" />
+
+            <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+                android:id="@+id/dock_rows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                myAndroid:dialogTitle="@string/Dockrow"
+                myAndroid:dialogType="SINGLE_CHOICE"
+                myAndroid:listEntries="@array/dock_row_count"
+                myAndroid:listEntryValues="@array/dock_row_value"
+                myAndroid:summaryText="@string/Dockrowsummary"
+                myAndroid:titleText="@string/Dockrow" />
+
+            <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemCheckBoxView
+                android:id="@+id/show_dock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                myAndroid:titleText="@string/Dockshow" />
+
+            <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemCheckBoxView
+                android:id="@+id/dock_change_loop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                myAndroid:titleText="@string/desk_setting_dock_auto_cycle" />
+
+        </LinearLayout>
+    </com.jiubang.ggheart.apps.desks.Preferences.view.TranslucentScrollView>
+
+</LinearLayout>

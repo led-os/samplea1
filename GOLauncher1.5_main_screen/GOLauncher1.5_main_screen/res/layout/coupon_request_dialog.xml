@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+            android:id="@+id/message_layout"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginLeft="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp">
+         <EditText 
+    	    android:id="@+id/coupon_id"
+       		android:layout_width="match_parent"
+        	android:layout_height="36dp"
+        	android:layout_marginTop="20dp"
+        	android:layout_marginBottom="20dp"
+        	android:background="@drawable/coupon_input_bg"
+        	android:textColor="#343434"
+        	android:textSize="15sp"
+        	android:paddingLeft="16dp"
+        	 android:layout_centerVertical="true"
+        	/>
+         <ImageButton 
+             android:id="@+id/clear_coupon"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/appfunc_search_clear_btn_selector"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="8.5dp"
+             android:visibility="gone"
+             />
+        </RelativeLayout>
+
+</LinearLayout>

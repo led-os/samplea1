@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
+    <!-- 主题管理 -->
+    <dimen name="singletheme_detail_pic_land_width_ldpi">127dip</dimen>
+        
+    <!-- 桌面帮助层 -->
+    
+    
+    <dimen name="appfunc_search_naviagation_text_size">8dp</dimen>
+</resources>

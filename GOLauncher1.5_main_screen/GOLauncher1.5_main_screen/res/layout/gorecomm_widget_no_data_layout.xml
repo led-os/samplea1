@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" >
+	<!-- 刷新按钮 -->
+		<RelativeLayout android:id="@+id/refresh_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_gravity="center_vertical">
+		<FrameLayout android:id="@+id/gorecomm_refresh_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp">
+			<ImageButton android:id="@+id/gorecomm_refresh_btn" android:layout_width="23dp" android:layout_height="23dp" android:layout_gravity="right"
+				android:background="@drawable/gorecomm_refresh_individuation_btn_selector" android:contentDescription="@null" android:scaleType="fitCenter" />
+		</FrameLayout>
+		<FrameLayout android:id="@+id/progressbar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:visibility="invisible" >
+			<ProgressBar android:layout_width="23dp" android:layout_height="23dp" android:layout_gravity="right" android:indeterminateDrawable="@drawable/gorecomm_refresh_individuation_progress" />
+		</FrameLayout>
+	</RelativeLayout>
+	<!-- 显示内容区域 -->
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingLeft="17.5dp" android:paddingBottom="15dp" android:paddingRight="10dp" android:orientation="vertical" android:gravity="center">
+		<!-- 提示图标 -->
+		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gorecomm_widget_no_network"/>
+		<!-- 提示信息 -->
+		<TextView android:id="@+id/network_error_textview" android:paddingTop="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:ellipsize="end" android:shadowDx="1.5" android:shadowDy="1.5" android:shadowRadius="1"
+            android:singleLine="true" android:textColor="#707070" android:textSize="16.5sp" android:text="@string/gorecomm_network_timeout_message"/>
+	</LinearLayout>
+</RelativeLayout>
+       

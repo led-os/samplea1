@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/folder_edit_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/folder_edit_top_bottom_hight"
+            android:background="@drawable/folder_top_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/rate_remind_tips"
+            android:textColor="#252424"
+            android:textSize="17sp" />
+
+        <ScrollView
+            android:id="@+id/scroll_layout"
+            android:layout_weight="1.0"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/content_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/rate_banner"
+                    android:paddingBottom="8dip"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/remind_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="12dip"
+                    android:text="@string/rate_remind_msg_new"
+                    android:textColor="#343434"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/remind_never"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@drawable/folder_button_selector"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:src="@drawable/dialog_cancel" />
+
+                <com.jiubang.ggheart.components.DeskButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:clickable="false"
+                    android:background="@null"
+                    android:text="@string/rate_remind_never"
+                    android:textColor="#343434"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/folder_button_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/folder_button_selector"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:id="@+id/feedback"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:src="@drawable/dialog_cancel" />
+
+                <com.jiubang.ggheart.components.DeskButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:clickable="false"
+                    android:background="@null"
+                    android:text="@string/rate_remind_next"
+                    android:textColor="#343434"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/folder_button_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:id="@+id/rate"
+                android:background="@drawable/folder_button_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:src="@drawable/dialog_ok" />
+
+                <com.jiubang.ggheart.components.DeskButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:id="@+id/rate_child"
+                    android:background="@null"
+                    android:textColor="#86b300"
+                    android:clickable="false"
+                    android:text="@string/rate_rate"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

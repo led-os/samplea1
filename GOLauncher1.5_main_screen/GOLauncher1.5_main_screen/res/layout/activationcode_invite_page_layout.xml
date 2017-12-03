@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:background="#F0F0F0">
+    <!-- 头部标题栏 -->
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="58dp" android:orientation="horizontal" android:background="#FFFFFF">
+      <!-- 返回按钮 -->
+      <ImageView android:id="@+id/back_btn" android:layout_width="20dp" android:layout_height="wrap_content" android:layout_gravity="center" android:background="@drawable/desk_setting_page_title_back_new"/>  
+      <!-- Icon图标 -->
+      <ImageView android:layout_width="38.5dp" android:layout_height="wrap_content" android:layout_gravity="center" android:src="@drawable/invite_small_icon"/>  
+      <!-- 标题 -->
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical|left" android:text="@string/activationcode_invite_title"
+          android:textSize="21.5sp" android:textColor="#000000" android:paddingLeft="2dp" />  
+    </LinearLayout>
+   	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:paddingTop="24dp"  android:paddingBottom="26.5dp">
+   		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activationcode_invite_explain"
+   		    android:textSize="24sp" android:textColor="#000000"/>
+   		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activationcode_invite_explain_launcher"
+   		    android:textSize="24sp" android:textColor="#000000" android:paddingTop="6dp"/>
+   		<!-- 可邀请人数 -->
+   		<TextView android:id="@+id/invite_people_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activationcode_invite_explain_surplus"
+   		    android:textSize="19.5sp" android:textColor="#85C443" android:paddingTop="19.5dp"/>
+   	</LinearLayout>
+   	<!-- 操作区域 -->
+   	<LinearLayout android:layout_width="match_parent" android:layout_height="36dp" android:orientation="horizontal" 
+		android:gravity="center"> 
+		<!-- 邀请好友邮箱输入框 -->
+		<EditText android:id="@+id/invite_email_edittext" android:layout_width="240dp" android:layout_height="wrap_content"
+			android:singleLine="true" android:inputType="textEmailAddress" android:textColorHint="#999999" android:gravity="center" android:textSize="19sp" 
+			android:hint="@string/activationcode_invite_enter_email" android:textColor="#999999" />
+		<!-- 邀请按钮 -->
+		<Button android:id="@+id/invite_btn" android:layout_width="90dp" android:background="@drawable/invite_btn_bg_selector" 
+			android:textColor="#FFFFFF" android:textSize="19sp" android:layout_height="match_parent" android:gravity="center" 
+			android:text="@string/activationcode_invite_btn"/>
+	</LinearLayout>
+	<!-- banner图 -->
+	<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:gravity="center"> 
+		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/invite_banner" />  
+    </LinearLayout>
+</LinearLayout>

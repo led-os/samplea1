@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/go_recomm_widget42_layout" android:layout_width="match_parent" android:layout_height="match_parent" >
+	<!-- Banner图 -->
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+		<ImageView android:id="@+id/gorecomm_widget_banner_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/gorecomm_widget_default_bg" />
+	</LinearLayout>
+	<!-- 刷新按钮 -->
+	<RelativeLayout android:id="@+id/refresh_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_gravity="center_vertical">
+		<FrameLayout android:id="@+id/gorecomm_refresh_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp">
+			<ImageButton android:id="@+id/gorecomm_refresh_btn" android:layout_width="23dp" android:layout_height="23dp" android:layout_gravity="right"
+				android:background="@drawable/gorecomm_refresh_btn_selector" android:contentDescription="@null" android:scaleType="fitCenter" />
+		</FrameLayout>
+		<FrameLayout android:id="@+id/progressbar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:visibility="invisible" >
+			<ProgressBar android:layout_width="23dp" android:layout_height="23dp" android:layout_gravity="right" android:indeterminateDrawable="@drawable/gorecomm_refresh_progress" />
+		</FrameLayout>
+	</RelativeLayout>
+	<!-- 遮罩图 -->
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:orientation="vertical">
+		<ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/gorecomm_widget_groupon_mask_icon"/>
+	</LinearLayout>
+	<!-- 显示内容区域 -->
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingBottom="10dp" android:paddingRight="10dp" android:paddingLeft="15dp" android:orientation="vertical" android:gravity="bottom|left">
+		<!-- 名称 -->
+		<TextView android:id="@+id/content_title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom"
+			android:ellipsize="end" android:gravity="bottom" android:paddingLeft="5dip" android:shadowDx="1.5" android:shadowDy="1.5" android:shadowRadius="1"
+            android:singleLine="false" android:textColor="#FFFFFF" android:textSize="16.5sp" />
+		<!-- 价格信息 -->
+		<LinearLayout android:layout_width="fill_parent" android:paddingTop="5dp" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+		    <!-- Groupon Logo -->
+		    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/groupon_logo_icon"/>
+		    <!-- 原始价格(打折前)信息 -->
+		    <TextView android:id="@+id/original_price_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom"
+				android:ellipsize="end" android:paddingLeft="5dip" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1"
+	            android:singleLine="true" android:textColor="#B4B4B4" android:textSize="20sp" android:textStyle="bold" />
+		    <!-- 现在价格(打折后)信息 -->
+		    <TextView android:id="@+id/price_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom"
+				android:ellipsize="end" android:paddingLeft="5dip" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1"
+	            android:singleLine="true" android:textColor="#FFDB3A" android:textSize="22.5sp" android:textStyle="bold" />
+		</LinearLayout>
+	</LinearLayout>
+	
+</RelativeLayout>

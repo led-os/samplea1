@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/message_center_listcontainer_bg"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/message_center_topbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/message_center_topbar_container_height" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_center_list_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/message_center_topbar_layout" >
+    </RelativeLayout>
+
+</RelativeLayout>

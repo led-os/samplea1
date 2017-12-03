@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!-- 定义与组件相关的尺寸、坐标 --><resources>
+    <!-- BubbleTextView 图标与文字的间距 -->
+    <dimen name="drawable_padding">5dip</dimen>
+    
+    <dimen name="dots_indicator_height">25dip</dimen>
+    <dimen name="dots_indicator_width">21dip</dimen>
+    <dimen name="slider_indicator_height">25dip</dimen>
+    
+    
+    <!-- 屏幕预览的卡片底图使用NinePatch图片，其边框间隙如下 -->
+    
+    
+    
+    
+     
+    <dimen name="actual_cell_width_port">80dip</dimen> 
+    <dimen name="actual_cell_height_port">100dip</dimen> 
+    <dimen name="actual_cell_width_land">106dip</dimen> 
+    <dimen name="actual_cell_height_land">74dip</dimen>
+    <dimen name="cell_width_port">80dip</dimen> 
+    <dimen name="cell_height_port">100dip</dimen> 
+    <dimen name="cell_width_land">106dip</dimen> 
+    <dimen name="cell_height_land">74dip</dimen> 
+    <dimen name="cell_width_port_old">80dip</dimen> 
+    <dimen name="cell_height_port_old">100dip</dimen> 
+    <dimen name="cell_width_land_old">106dip</dimen> 
+    <dimen name="cell_height_land_old">74dip</dimen> 
+    <dimen name="screen_long_start_padding_port">25dip</dimen>
+    <dimen name="screen_long_end_padding_port">70dip</dimen>
+    <dimen name="screen_short_start_padding_port">0dip</dimen>
+    <dimen name="screen_short_end_padding_port">0dip</dimen>
+    <dimen name="screen_long_start_padding_land">0dip</dimen>
+    <dimen name="screen_long_end_padding_land">70dip</dimen>
+    <dimen name="screen_short_start_padding_land">25dip</dimen>
+    <dimen name="screen_short_end_padding_land">0dip</dimen>
+    <dimen name="screen_icon_size">48dip</dimen>
+    <dimen name="dock_icon_padding_top_port">5dip</dimen>
+    <dimen name="dock_icon_padding_bottom_port">7dip</dimen>
+    <dimen name="dock_icon_padding_left_land">5dip</dimen>
+    <dimen name="dock_icon_padding_right_land">7dip</dimen>
+    <dimen name="dock_notify_width">21dip</dimen>
+    <dimen name="dock_notify_height">21dip</dimen>
+    <dimen name="dock_notify_font_size">14dip</dimen>
+    <dimen name="dock_bg_height">80dip</dimen>
+    <!-- dimen name="imagepreview_count">4</dimen> -->
+    <dimen name="imagepreview_grid_width">64dip</dimen>
+    <dimen name="imagepreview_grid_height">64dip</dimen>
+    <!-- <dimen name="imagepreview_grid_h_space">5dip</dimen> -->
+    <!-- <dimen name="imagepreview_grid_v_space">5dip</dimen> -->
+    <dimen name="imagepreview_grid_l_padding">8dip</dimen>
+    <dimen name="imagepreview_grid_t_padding">8dip</dimen>
+    <dimen name="imagepreview_grid_r_padding">8dip</dimen>
+    <dimen name="imagepreview_grid_b_padding">8dip</dimen>
+    
+    
+    
+    
+    
+    
+    <dimen name="counter_circle_padding">4dip</dimen>
+    <dimen name="inner_desk_folder_icon_size">17dip</dimen>
+    
+    <dimen name="scale_size">20dip</dimen>
+    
+    <!--userFolder-->
+    
+    
+    
+    
+    <dimen name="user_folder_grid_width_h">543px</dimen>
+    <dimen name="user_folder_grid_width_v">464px</dimen>
+    <dimen name="user_folder_line_height">80dip</dimen>
+    <dimen name="user_folder_closeBtn_margin">47dip</dimen>
+    
+    
+    
+    
+    
+    <!-- 页面指示器 -->
+    <dimen name="indicator_numeric_textsize">10sp</dimen> 
+    <!-- 主题管理 -->
+    
+    <dimen name="mytheme_pic_width">87dip</dimen>
+    <dimen name="mytheme_pic_height">133dip</dimen>
+    <!-- 
+    <dimen name="singletheme_detail_pic_width">143dip</dimen>
+    <dimen name="singletheme_detail_pic_height">231dip</dimen>
+     -->
+    
+    
+
+    <dimen name="theme_info_text_width">54dip</dimen>
+    
+    <!-- QuickActionMenu箭头左右边距 --> 
+    <dimen name="qa_arrow_padding_left">16dip</dimen> 
+    <dimen name="qa_arrow_padding_right">16dip</dimen> 
+    
+    <!-- ColorPickerDialog -->
+    <dimen name="color_picker_center">135px</dimen>
+    <dimen name="color_picker_radius">45px</dimen>
+    
+    <!-- LargeIcon -->
+    <dimen name="dock_bg_large_height">65dip</dimen>
+    <dimen name="screen_long_start_padding_large_icon_port">8dip</dimen>
+    <dimen name="screen_long_start_padding_large_icon_land">8dip</dimen>
+    <dimen name="screen_icon_large_size">56dip</dimen>
+    <dimen name="user_folder_line_height_large">85dip</dimen>
+    <dimen name="cell_layout_blank_height">10dip</dimen>
+    <dimen name="cell_layout_blank_width">20dip</dimen>
+    
+    
+    <!-- widget管理2.0 -->
+    <!-- 小分辨率机型的图片宽高 -->
+    
+    
+    
+    
+    
+    
+    
+    <dimen name="skin_menu_max_height">230dip</dimen>
+    <dimen name="skin_menu_width">127dip</dimen>
+    
+    
+    <!-- 桌面帮助层 -->
+    <dimen name="guide_screeneffect_title_height">60dip</dimen>
+    <dimen name="guide_screeneffect_listview_height">240dip</dimen>
+    <dimen name="guide_screeneffect_listview_height_secondtip">285dip</dimen>
+    
+    <dimen name="guide_screeneffect_topline_listview_space">44dip</dimen>
+    <dimen name="guide_screeneffect_listview_button_space">32dip</dimen>
+    <dimen name="guide_screeneffect_topline_listview_space_secondtip">15dip</dimen>
+    <dimen name="guide_screeneffect_listview_button_space_secondtip">15dip</dimen>
+    <dimen name="guide_screeneffect_buttons_settingpath_space_secondtip">15dip</dimen>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- 功能表帮助层 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- menu2.0 -->
+    <!-- 分割线的宽、高 -->
+    <dimen name="menu_divline_height">33dip</dimen>
+    
+    <!-- 消息中心 -->
+    
+    
+    <!-- 应用游戏中心的按钮文件大小 -->
+    <dimen name="appgame_textSize_cn">8dip</dimen>
+    <dimen name="appgame_textSize_es">6dip</dimen>
+     
+    <dimen name="screen_folder_modify_icon_large_size">56dip</dimen>
+    <!-- start 屏幕层参数 -->
+    <dimen name="cell_width_port_auto_fit">76dip</dimen>
+    <dimen name="cell_height_port_auto_fit">88dip</dimen>
+</resources>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Feedback</title>
+<style>
+*{ padding:0; margin:0;}
+html,body{margin:0;padding: 0 0 8px 0;}
+a,a:hover{ text-decoration:none;}
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;}
+ul li, ol li{ list-style-type:none;}
+input{-webkit-appearance: none;}
+.header{background-color:#2e2e2e; border-top:1px solid #3d3d3d; border-bottom:2px solid #3d3d3d;}
+.header span{ color:#e0e0e0; text-decoration:none; display:block;padding:0.9em; font-size:1.2em; font-weight:900; }
+/*.header a span{ font-weight:bolder; padding-right:0.5em; font-family:"宋体";}*/
+.container{ width:90%; margin:0 auto; color:#494949;}
+.feedtxt1{ border-bottom:1px solid #d2d2d2;}
+.feedtxt1 p{ border-bottom:1px solid #fff; line-height:1.2em; padding:1em 0; font-size:1.2em;}
+
+.container ul#checkbox_f li{ font-size:1em; padding:0.4em;}
+.container ul#checkbox_f li input{ margin-right:0.5em;}
+.container ul#checkbox_f li input[type="checkbox"]{ background:url(selected.png) no-repeat 0 -58px;width:18px;height:20px;margin-right:10px;}
+.container ul#checkbox_f li input[type="checkbox"]:checked{ background-position:0 -3px;}
+.container ul#checkbox_f li tr td:first-child{ vertical-align:top;}
+.txtare{ width:100%;  padding-top:5px;}
+.txtare textarea{border:1px solid #d2d2d2; background:#fff; width:100%;}
+.feedtxt2{ padding-top:1em; border-top:1px solid #d2d2d2; margin-top:0.5em;}	
+.feedtxt2 span{ display:block; float:left; background:#53ab33; height:8px; width:8px; border-radius:1px; margin:4px 5px 0 0;}
+.feedsubmit{ clear:both; padding:1em 0;}
+.feedsubmit a,.feedsumit2 div a{ display:block;height:2.3em; text-align:center; background:#85c443; color:#fff; font-size:1.1em; font-weight:bold; border:0; width:100%; border-radius:2px; line-height:2.3em;}
+.feedsumit2{ position:fixed; bottom:0; left:0; right:0;/**/}
+.feedsumit2 div{ display:block; float:left; width:50%; }
+.feedsumit2 div:first-child a{ display:block; border-bottom-right-radius:0em; border-top-right-radius:0;}
+.feedsumit2 div.lastChid a{ border-bottom-left-radius:0; border-top-left-radius:0;border-left:1px solid #264e7d;}
+#loading {position: absolute;display: none;width: 32px;height: 32px;background: #FFF;z-index: 2009;}
+.div_middle{text-align:center;vertical-align:middle;background: #FFF;margin: 160px auto;}
+.bot_lin{ height:4px; position:fixed; bottom:0; left:0; right:0; /**/background:url(bot_liner.jpg) repeat-x;}
+</style>
+<script type="text/javascript">
+function uninst(){
+	window.buttonclick.uninstalledGoLauncher();
+}
+function smt(){
+	if(check()){
+		loading();
+		var smtbtn=document.getElementById('sub');
+		smtbtn.style.background="#C4C4C4";
+		document.vote.submit();
+	}
+}
+
+function loading(){
+	var divs=document.getElementById('loading');
+	var v_left=document.body.clientWidth/2 + document.body.scrollLeft;
+	var v_top=(document.body.clientHeight-divs.clientHeight-120)/2 + document.body.scrollTop;
+	divs.style.left=v_left+'px';
+	divs.style.top=v_top+'px';
+	divs.style.display="block"; //显示DIV
+}
+function init(imei,lang,local,channel) {
+	var urlAdress="http://gosurvey.3g.net.cn/survey/webcontent/survey_new.jsp?uid=" + imei + "&sid=9d1a7b4d-0137-4f8b-95b1-6670cb02c7e7&lang="+ lang + "&local=" + local + "&channel=" + channel;
+	document.vote.action = urlAdress;
+}
+function check(){
+   	var input_all=0;
+    var u=document.getElementById('fbk');
+	if(! /^\s*$/.test(u.value))
+		input_all++;
+    var objs = document.getElementsByTagName("input");
+    for(var i=0; i<objs.length; i++) {
+		if(objs[i].type.toLowerCase() == "checkbox" && objs[i].checked)
+        input_all++;
+    }
+   if (input_all==0)
+   {
+   	 return true;
+   }else
+   	 return true;
+}
+</script>
+</head>
+
+<body>
+<div class="container">
+ <form  name="vote" id="vote" action="http://gosurvey.3g.net.cn/survey/webcontent/survey_new.jsp?uid=test&sid=b81b9a2f-5543-4f8a-bb5d-756994f7d458&local=CN&lang=zh&channel=20305" method="post">
+	<div id="loading"><img src="/survey/webcontent/Images/loading.gif"></div>
+	<div class="feedtxt1"><p>亲爱的用户，请向我们反馈您要卸载GO桌面的原因，我们收到后会尽快地修复。感谢您对我们工作的支持！</p></div>
+    <fieldset>
+    
+    <ul id="checkbox_f">
+    	<li>
+        	<table >
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:fffd5e86-291c-4de8-b183-91473a3f2fe1"
+							id="opid:576f0a57-9c32-4f6e-9067-79e08ea686a2"
+							value="op:fffd5e86-291c-4de8-b183-91473a3f2fe1:576f0a57-9c32-4f6e-9067-79e08ea686a2" /></td>
+    			<td><label for="opid:576f0a57-9c32-4f6e-9067-79e08ea686a2">A.卡、慢</label></td>
+    		</tr>
+            </table>
+        </li>
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:fffd5e86-291c-4de8-b183-91473a3f2fe1"
+							id="opid:a3d58f09-8112-4486-a223-26c3d387fc42"
+							value="op:fffd5e86-291c-4de8-b183-91473a3f2fe1:a3d58f09-8112-4486-a223-26c3d387fc42" /></td>
+        		<td><label	for="opid:a3d58f09-8112-4486-a223-26c3d387fc42">B.耗电</label></td>
+    		</tr>
+            </table>
+        </li>
+
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:fffd5e86-291c-4de8-b183-91473a3f2fe1"
+							id="opid:d66e486e-0bd4-445d-88da-2cdb4fe8eb3d"
+							value="op:fffd5e86-291c-4de8-b183-91473a3f2fe1:d66e486e-0bd4-445d-88da-2cdb4fe8eb3d" /></td>
+        		<td><label for="opid:d66e486e-0bd4-445d-88da-2cdb4fe8eb3d">C.性能不稳定</label></td>
+    		</tr>
+            </table>
+        </li>
+        		
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:fffd5e86-291c-4de8-b183-91473a3f2fe1"
+							id="opid:befefcd4-d3c2-47a4-90fd-1a7650cc3ec6"
+							value="op:fffd5e86-291c-4de8-b183-91473a3f2fe1:befefcd4-d3c2-47a4-90fd-1a7650cc3ec6" /></td>
+        		<td><label for="opid:befefcd4-d3c2-47a4-90fd-1a7650cc3ec6">D.功能太少，不满足使用</label></label></td>
+    		</tr>
+            </table>
+        </li>
+        		
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:fffd5e86-291c-4de8-b183-91473a3f2fe1"
+							id="opid:e9699e32-c2f9-4bfd-9116-86c6edfc023c"
+							value="op:fffd5e86-291c-4de8-b183-91473a3f2fe1:e9699e32-c2f9-4bfd-9116-86c6edfc023c" /></td>
+        		<td><label	for="opid:e9699e32-c2f9-4bfd-9116-86c6edfc023c">E.操作复杂难用</label></td>
+    		</tr>
+            </table>
+        </li>
+
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:fffd5e86-291c-4de8-b183-91473a3f2fe1"
+							id="opid:2a62010b-5b91-4d12-9f69-ee79d0d4483f"
+							value="op:fffd5e86-291c-4de8-b183-91473a3f2fe1:2a62010b-5b91-4d12-9f69-ee79d0d4483f" /></td>
+        		<td><label	for="opid:2a62010b-5b91-4d12-9f69-ee79d0d4483f">F.用回系统桌面</label></td>
+    		</tr>
+            </table>
+        </li>
+        	
+        <li>
+        	<table>
+            	<tr>
+        		<td><input type="checkbox"
+							name="qa:fffd5e86-291c-4de8-b183-91473a3f2fe1"
+							id="opid:450994b1-d1b2-43b2-8362-80cdbddb1de4"
+							value="op:fffd5e86-291c-4de8-b183-91473a3f2fe1:450994b1-d1b2-43b2-8362-80cdbddb1de4" /></td>
+        		<td><label	for="opid:450994b1-d1b2-43b2-8362-80cdbddb1de4">G.用其他第三方桌面替代</label></td>
+    		</tr>
+            </table>
+        </li>
+    </ul>
+    
+    </fieldset>
+    <div class="feedtxt2"><span></span>反馈内容</div>
+    <div class="txtare">
+    	<textarea name="feeback" cols="" rows="4" id="fbk"></textarea><br/><br/><br/>
+    </div>
+<!--    <div class="feedsubmit" id="sub" ><a href="javascript:smt();">Submit</a></div>-->
+ 	    <div class="feedsumit2"> 
+ 	        	<div><a id="sub" href="javascript:smt();">提交</a></div> 
+ 	            <div class="lastChid"><a href="javascript:uninst();">继续卸载</a></div>
+ 	    </div>
+    </div>
+     
+   
+	   <input type="hidden" name="uuid" value="13aa8a2b-e13b-46a9-a155-9e5cf6e3c049" /> 
+	   <input type="hidden" name="thanksword" value='再次感谢您的配合！' /> 
+	   <input type="hidden" name="title" value='意见反馈' /> 
+	   <input type="hidden" name="smt" value='提交' /> 
+	   <input type="hidden" name="uninst" value='继续卸载' />
+    </form>
+</div>
+</body>
+</html>

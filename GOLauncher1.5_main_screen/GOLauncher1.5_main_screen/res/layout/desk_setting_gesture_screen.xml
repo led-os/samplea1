@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myAndroid="http://schemas.android.com/apk/res/com.gau.go.launcherex"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/desk_setting_bg_color"
+    android:orientation="vertical" >
+
+    <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingPageTitleView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        myAndroid:image="@drawable/desk_setting_page_title_back_new"
+        myAndroid:titleBg="@drawable/desk_setting_page_title_bg_new"
+        myAndroid:titleHeight="@dimen/desk_setting_pagetitle_height_new"
+        myAndroid:titleShowLogo="true"
+        myAndroid:titleText="@string/desk_setting_screen_gesture"
+        myAndroid:titleTextColor="@color/desk_setting_page_title_color_new"
+        myAndroid:titleTextLineHeight="0dp"
+        myAndroid:titleTextSize="@dimen/desk_setting_page_title_text_size" />
+
+    <com.jiubang.ggheart.apps.desks.Preferences.view.TranslucentScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/desk_setting_view_padding"
+                android:layout_marginRight="@dimen/desk_setting_view_padding"
+                android:layout_marginTop="@dimen/desk_setting_view_padding_top"
+                android:background="@drawable/desk_setting_group_bg"
+                android:orientation="vertical" >
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+                    android:id="@+id/home_gesture_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:dialogTitle="@string/home_key_setting"
+                    myAndroid:dialogType="GESTURE"
+                    myAndroid:image="@drawable/home"
+                    myAndroid:listEntries="@array/gesture_entries"
+                    myAndroid:listEntryValues="@array/gesture_values"
+                    myAndroid:summaryText="@string/home_gesture_hint"
+                    myAndroid:titleText="@string/home_key_setting" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+                    android:id="@+id/up_gesture_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:dialogTitle="@string/up_gesture_setting"
+                    myAndroid:dialogType="GESTURE"
+                    myAndroid:image="@drawable/up_gesture"
+                    myAndroid:listEntries="@array/gesture_entries"
+                    myAndroid:listEntryValues="@array/gesture_values"
+                    myAndroid:summaryText="@string/up_gesture_hint"
+                    myAndroid:titleText="@string/up_gesture_setting" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+                    android:id="@+id/down_gesture_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:dialogTitle="@string/down_gesture_setting"
+                    myAndroid:dialogType="GESTURE"
+                    myAndroid:image="@drawable/down_gesture"
+                    myAndroid:listEntries="@array/gesture_entries"
+                    myAndroid:listEntryValues="@array/gesture_values"
+                    myAndroid:summaryText="@string/down_gesture_hint"
+                    myAndroid:titleText="@string/down_gesture_setting" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+                    android:id="@+id/double_click_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:dialogTitle="@string/double_click_setting"
+                    myAndroid:dialogType="GESTURE"
+                    myAndroid:image="@drawable/double_click"
+                    myAndroid:listEntries="@array/gesture_entries"
+                    myAndroid:listEntryValues="@array/gesture_values"
+                    myAndroid:summaryText="@string/down_gesture_hint"
+                    myAndroid:titleText="@string/double_click_setting" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+                    android:id="@+id/pinchout_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    myAndroid:dialogTitle="@string/pinchout_setting"
+                    myAndroid:dialogType="GESTURE"
+                    myAndroid:listEntries="@array/gesture_entries"
+                    myAndroid:listEntryValues="@array/gesture_values"
+                    myAndroid:summaryText="@string/disable"
+                    myAndroid:titleText="@string/pinchout_setting" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+                    android:id="@+id/swipeUp_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:dialogTitle="@string/swipeUp_setting"
+                    myAndroid:dialogType="GESTURE"
+                    myAndroid:image="@drawable/swipeup"
+                    myAndroid:listEntries="@array/gesture_entries"
+                    myAndroid:listEntryValues="@array/gesture_values"
+                    myAndroid:summaryText="@string/disable"
+                    myAndroid:titleText="@string/swipeUp_setting" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+                    android:id="@+id/rotate_ccw_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:dialogTitle="@string/rotate_ccw_setting"
+                    myAndroid:dialogType="GESTURE"
+                    myAndroid:image="@drawable/rotate_ccw"
+                    myAndroid:listEntries="@array/gesture_entries"
+                    myAndroid:listEntryValues="@array/gesture_values"
+                    myAndroid:summaryText="@string/disable"
+                    myAndroid:titleText="@string/rotate_ccw_setting" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+                    android:id="@+id/rotate_cw_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:dialogTitle="@string/rotate_cw_setting"
+                    myAndroid:dialogType="GESTURE"
+                    myAndroid:image="@drawable/rotate_cw"
+                    myAndroid:listEntries="@array/gesture_entries"
+                    myAndroid:listEntryValues="@array/gesture_values"
+                    myAndroid:summaryText="@string/disable"
+                    myAndroid:titleText="@string/rotate_cw_setting" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.jiubang.ggheart.apps.desks.Preferences.view.TranslucentScrollView>
+
+</LinearLayout>

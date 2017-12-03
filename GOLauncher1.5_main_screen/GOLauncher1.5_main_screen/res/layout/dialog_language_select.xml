@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal" 
+    android:orientation="vertical" >
+
+    <com.jiubang.ggheart.components.DeskTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/folder_edit_top_bottom_hight"
+        android:background="@drawable/folder_top_bg"
+        android:gravity="center_vertical"
+        style="@style/launcher_dialog_title_text"
+        android:text="@string/menuitem_language" />
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/single_choice_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

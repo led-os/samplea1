@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ggheart="http://schemas.android.com/apk/res/com.gau.go.launcherex"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/contentview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/folder_edit_view_height"
+        android:background="@drawable/folder_edit_bg"
+        android:orientation="vertical" >
+
+        <com.jiubang.ggheart.components.DeskTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/folder_edit_top_bottom_hight"
+            android:background="@drawable/folder_top_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dip"
+            android:text="@string/locklist"
+            android:textColor="#252424"
+            android:textSize="17sp" />
+
+        <com.jiubang.ggheart.components.MultiCheckViewGroup
+            android:id="@+id/multi_check_viewgroup"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" />
+
+        <com.jiubang.ggheart.components.GoProgressBar
+            android:id="@+id/appfunc_hide_app_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            ggheart:prossbar_color_selete="0" >
+
+            <ProgressBar
+                android:id="@+id/go_progressbar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="visible" />
+        </com.jiubang.ggheart.components.GoProgressBar>
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <com.jiubang.ggheart.components.DeskButton
+                android:id="@+id/hidecancle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/folder_button_selector"
+                android:gravity="center"
+                android:text="@string/cancle"
+                android:textColor="#343434"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/folder_button_line" />
+
+            <com.jiubang.ggheart.components.DeskButton
+                android:id="@+id/hideok"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/folder_button_selector"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="#343434"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<com.jiubang.ggheart.apps.desks.diy.filter.view.FilterChooser xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ggheart="http://schemas.android.com/apk/res/com.gau.go.launcherex"
+    android:id="@+id/filter_chooser"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E9E9E9" >
+
+    <LinearLayout
+        android:id="@+id/filter_top_container"
+        android:layout_width="fill_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/filter_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/change_icon_tab_selector"
+            android:src="@drawable/filter_go_back" />
+
+        <ImageView
+            android:id="@+id/image_go_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/new_launcher_logo" />
+
+        <com.jiubang.ggheart.components.DeskTextView
+            android:id="@+id/filter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/filter_wallpaper_title"
+            android:textColor="#343434"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.jiubang.ggheart.apps.gowidget.gostore.views.ScrollerViewGroup
+        android:id="@+id/filter_chooser_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/filter_bottom_container"
+        android:layout_below="@id/filter_top_container" />
+
+    <LinearLayout
+        android:id="@id/filter_bottom_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/leftArrow"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/filter_thumb_width"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:visibility="invisible"
+                android:src="@drawable/filter_scroller_left_arrow_selector" />
+
+            <ImageView
+                android:id="@+id/rightArrow"
+                android:layout_width="20dp"
+                android:visibility="invisible"
+                android:layout_height="@dimen/filter_thumb_width"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/filter_scroller_right_arrow_selector" />
+
+            <com.jiubang.ggheart.apps.desks.diy.filter.view.LinearLayoutScroller
+                android:id="@+id/filter_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/filter_select_item_height"
+                android:layout_toLeftOf="@id/rightArrow"
+                android:layout_toRightOf="@id/leftArrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/filter_action_button_bg" >
+
+            <ImageView
+                android:id="@+id/middle_line"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/filter_action_button_middle_line" />
+
+            <RelativeLayout
+                android:id="@+id/btn_set_wallpaper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/middle_line"
+                android:background="@drawable/filter_action_button_selector" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/set_wallpaper_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/filter_action_button_setting_indicate" />
+
+                    <com.jiubang.ggheart.components.DeskTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/set_wallpaper_logo"
+                        android:enabled="true"
+                        android:text="@string/filter_wallpaper_set"
+                        android:textColor="#343434"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/filter_prime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/filter_prime"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_preview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/middle_line"
+                android:background="@drawable/filter_action_button_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_action_button_preview_indicate" />
+
+                <com.jiubang.ggheart.components.DeskTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:text="@string/filter_wallpaper_preview"
+                    android:textColor="#343434"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <com.jiubang.ggheart.components.GoProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/filter_top_container"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        ggheart:prossbar_color_selete="1" >
+
+        <ProgressBar
+            android:id="@+id/go_progressbar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:visibility="visible" />
+    </com.jiubang.ggheart.components.GoProgressBar>
+
+</com.jiubang.ggheart.apps.desks.diy.filter.view.FilterChooser>

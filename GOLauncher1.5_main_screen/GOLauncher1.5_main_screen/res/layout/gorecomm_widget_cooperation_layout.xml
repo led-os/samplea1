@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/go_recomm_widget42_layout" android:layout_width="match_parent" android:layout_height="match_parent" >
+	<!-- Banner图 -->
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+		<ImageView android:id="@+id/gorecomm_widget_banner_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/gorecomm_widget_default_bg" />
+	</LinearLayout>
+	<!-- 刷新按钮 -->
+	<RelativeLayout android:id="@+id/refresh_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_gravity="center_vertical">
+		<FrameLayout android:id="@+id/gorecomm_refresh_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp">
+			<ImageButton android:id="@+id/gorecomm_refresh_btn" android:layout_width="23dp" android:layout_height="23dp" android:layout_gravity="right"
+				android:background="@drawable/gorecomm_refresh_btn_selector" android:contentDescription="@null" android:scaleType="fitCenter" />
+		</FrameLayout>
+		<FrameLayout android:id="@+id/progressbar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:visibility="invisible" >
+			<ProgressBar android:layout_width="23dp" android:layout_height="23dp" android:layout_gravity="right" android:indeterminateDrawable="@drawable/gorecomm_refresh_progress" />
+		</FrameLayout>
+	</RelativeLayout>
+	<!-- 遮罩图 -->
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:orientation="vertical">
+		<ImageView android:layout_width="fill_parent" android:layout_height="150dp" android:background="@drawable/gorecomm_widget_groupon_mask_icon"/>
+	</LinearLayout>
+	<!-- 显示内容区域 -->
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingLeft="17.5dp" android:paddingBottom="15dp" android:paddingRight="10dp" android:orientation="horizontal" android:gravity="bottom|left">
+		<!-- 应用中心图片 -->
+		<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gorecomm_widget_app_center_icon"/>
+		<!-- 名称 -->
+		<TextView android:id="@+id/app_name_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom"
+			android:ellipsize="end" android:paddingLeft="12dp" android:shadowDx="1.5" android:shadowDy="1.5" android:shadowRadius="1"
+            android:singleLine="true" android:textColor="#FFFFFF" android:textSize="16.5sp" />
+	</LinearLayout>
+	
+</RelativeLayout>
+       

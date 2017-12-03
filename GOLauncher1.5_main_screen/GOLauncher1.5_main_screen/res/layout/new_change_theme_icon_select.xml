@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.ggheart.apps.desks.imagepreview.ChangeIconPreviewLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/change_icon_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- title部分 -->
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/change_icon_title_bar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/change_icon_back"
+            android:layout_width="26dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/change_icon_tab_selector"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/new_change_icon_back" />
+
+        <TextView
+            android:id="@+id/themeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/new_change_icon_arrow_selector"
+            android:clickable="true"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/searchBtn"
+                android:layout_width="56dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/change_icon_tab_selector"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/new_change_icon_search"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/customBtn"
+                android:layout_width="56dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/change_icon_tab_selector"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/new_custom" />
+
+            <ImageView
+                android:id="@+id/downBtn"
+                android:layout_width="56dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/change_icon_tab_selector"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/new_download" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 默认图标部分 -->
+
+    <RelativeLayout
+        android:id="@+id/defaultIconLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" >
+
+        <ImageView
+            android:id="@+id/defaultIcon"
+            android:layout_width="78dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="center"
+            android:src="@drawable/new_change_icon_search" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/defaultIcon" >
+
+            <TextView
+                android:id="@+id/defaultName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text=""
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/defaultNameTip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/defaultName"
+                android:layout_marginTop="11dip"
+                android:text="@string/change_icon_default_icon"
+                android:textColor="#88FFFFFF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="60dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/new_change_icon_resetbtn_selector"
+            android:singleLine="true"
+            android:text="@string/change_icon_reset_default"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/new_change_icon_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/changeIconLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_more_icon_layout"
+        android:layout_below="@+id/defaultIconLayout" >
+
+        <com.jiubang.ggheart.apps.desks.imagepreview.ImageGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" >
+        </com.jiubang.ggheart.apps.desks.imagepreview.ImageGridView>
+
+        <com.jiubang.ggheart.apps.desks.imagepreview.BladeView
+            android:id="@+id/bladeView"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#00000000"
+            android:clickable="true"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_more_icon_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/ui3_theme_download_bg_selector"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:gravity="center"
+            android:shadowColor="#70000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:text="@string/more_icon_tip"
+            android:textColor="#FEFDFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</com.jiubang.ggheart.apps.desks.imagepreview.ChangeIconPreviewLayout>

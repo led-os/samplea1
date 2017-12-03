@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dingzijian -->
+    <!-- 更新提示log目前最多支持8条更新提示，如需减少条数，直接把updatelog的值置为""即可，无需删除 -->
+    <string name="updatelog1">1.（新功能）桌面內置開關小部件（請通過“添加-GO小部件”進行添加）</string>
+    <string name="updatelog2">2.（優化）GO小部件的聯網問題</string>
+    <string name="updatelog3">3.（修復）無法設置默認桌面的問題</string>
+    <string name="updatelog4">4.（修復）點擊快捷條圖標崩潰的問題</string>
+    <string name="updatelog5"></string>
+    <string name="updatelog6"></string>
+    <string name="updatelog7"></string>
+    <string name="updatelog8"></string>
+    <string name="guide_text1">Hello,</string>
+    <string name="guide_text2">I am GO Launcher...</string>
+    <string name="guide_text3">Updated!</string>
+    <string name="transparent_url">http://crowdin.net/project/golauncherex/</string>
+
+</resources>

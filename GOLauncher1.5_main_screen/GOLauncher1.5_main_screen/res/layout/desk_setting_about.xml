@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myAndroid="http://schemas.android.com/apk/res/com.gau.go.launcherex"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/desk_setting_bg_color"
+    android:orientation="vertical" >
+
+    <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingPageTitleView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        myAndroid:image="@drawable/desk_setting_page_title_back_new"
+        myAndroid:titleBg="@drawable/desk_setting_page_title_bg_new"
+        myAndroid:titleHeight="@dimen/desk_setting_pagetitle_height_new"
+        myAndroid:titleShowLogo="true"
+        myAndroid:titleText="@string/aboutGo"
+        myAndroid:titleTextColor="@color/desk_setting_page_title_color_new"
+        myAndroid:titleTextLineHeight="0dp"
+        myAndroid:titleTextSize="@dimen/desk_setting_page_title_text_size" />
+
+    <com.jiubang.ggheart.apps.desks.Preferences.view.TranslucentScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main_title"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="16dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/desk_setting_view_padding"
+                android:layout_marginRight="@dimen/desk_setting_view_padding"
+                android:layout_marginTop="@dimen/desk_setting_view_padding_top"
+                android:background="@drawable/desk_setting_group_bg"
+                android:orientation="vertical"
+                >
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                    android:id="@+id/check_version_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:summaryText="@string/curVersion"
+                    myAndroid:titleText="@string/check_version" />
+
+                <!--
+                 <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                android:id="@+id/function_forenotice_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                myAndroid:titleText="@string/desk_setting_function_forenotice" />
+                -->
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                    android:id="@+id/help_use_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:summaryText="@string/pref_help_hint"
+                    myAndroid:titleText="@string/setting_help_pref" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                    android:id="@+id/share_app_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:summaryText="@string/share_app_summary"
+                    myAndroid:titleText="@string/share_app" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                    android:id="@+id/rate_go_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:summaryText="@string/rate_go_launcher_summary"
+                    myAndroid:titleText="@string/rate_go_launcher" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                    android:id="@+id/feedback_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:summaryText="@string/feedback_summary"
+                    myAndroid:titleText="@string/feedback" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                    android:id="@+id/wallpaper_info_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:summaryText="@string/desksetting_about_wallpaper_summary"
+                    myAndroid:titleText="@string/desksetting_about_wallpaper_title" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                    android:id="@+id/copyright_info_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    myAndroid:summaryText="@string/copyright_info_summary"
+                    myAndroid:titleText="@string/copyright_info" />
+
+                <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                    android:id="@+id/activation_code_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    myAndroid:isHiddenBottomLine="true"
+                    myAndroid:titleText="@string/activation_code" />
+
+                <!--
+                 <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemBaseView
+                android:id="@+id/beta_updates_info_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                myAndroid:isHiddenBottomLine="true"
+                myAndroid:summaryText="@string/beta_updates_info_summary"
+                myAndroid:titleText="@string/beta_updates_info" />
+                -->
+            </LinearLayout>
+        </LinearLayout>
+    </com.jiubang.ggheart.apps.desks.Preferences.view.TranslucentScrollView>
+
+    <LinearLayout
+        android:id="@+id/check_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="29.3dip"
+            android:layout_height="29.3dip"
+            android:indeterminateDrawable="@drawable/go_progress_green"
+            android:scrollbarStyle="outsideOverlay"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/progress_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:text="@string/activation_code_checking"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

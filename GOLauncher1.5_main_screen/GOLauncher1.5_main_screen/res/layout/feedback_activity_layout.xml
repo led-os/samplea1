@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myAndroid="http://schemas.android.com/apk/res/com.gau.go.launcherex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/desk_setting_bg_color"
+    android:orientation="vertical" >
+        
+    
+    <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingPageTitleView
+        android:id="@+id/feedback_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        myAndroid:titleText="@string/menuitem_feedback" />
+    
+    <com.jiubang.ggheart.components.DeskButton 
+        android:id="@+id/feedback_send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/feedback_send_mail"
+        />
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/feedback_title"
+    	android:layout_above="@id/feedback_send_btn">
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/feedback_title"
+    	android:layout_above="@id/feedback_send_btn"
+    	android:orientation="vertical"
+    	android:paddingLeft="@dimen/desk_setting_view_padding"
+        android:paddingRight="@dimen/desk_setting_view_padding"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+    
+    	<!-- <com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingTitleView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	myAndroid:titleText="@string/feedback_select_type_title" />
+    
+    	<com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+        	android:id="@+id/feedback_classification_item"
+        	android:layout_width="wrap_content"
+        	android:layout_height="@dimen/desk_setting_gosetting_item_height"
+        	myAndroid:dialogTitle="@string/feedback_feedback_classification"
+        	myAndroid:summaryText="@string/feedback_classification_summary"
+        	myAndroid:dialogType="SINGLE_CHOICE"
+        	myAndroid:listEntries="@array/feedback_classification"
+        	myAndroid:listEntryValues="@array/feedback_classification_values"
+        	myAndroid:titleText="@string/feedback_feedback_classification" /> -->
+    
+    	<com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingTitleView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	myAndroid:titleText="@string/feedback_problem_classification" />
+    
+    	<com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingItemListView
+        	android:id="@+id/feedback_module_item"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	myAndroid:dialogTitle="@string/feedback_problem_module"
+        	myAndroid:summaryText="@string/feedback_problem_summary"
+        	myAndroid:dialogType="SINGLE_CHOICE"
+        	myAndroid:listEntries="@array/feedback_module"
+        	myAndroid:listEntryValues="@array/feedback_module_values"
+        	myAndroid:titleText="@string/feedback_problem_module" />
+    
+    	<com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingTitleView
+        	android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+        	myAndroid:titleText="@string/feedback_title_description" />
+    
+    	<com.jiubang.ggheart.components.DeskEditText 
+    	    android:id="@+id/feedback_edit_title"
+       		android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="3dp"
+        	android:singleLine="true"
+        	android:hint="@string/feedback_edit_title_tip" />
+    
+    	<com.jiubang.ggheart.apps.desks.Preferences.view.DeskSettingTitleView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	myAndroid:titleText="@string/feedback_msg_description" />
+    
+    	<com.jiubang.ggheart.components.DeskEditText 
+    	    android:id="@+id/feedback_edit_msg"
+        	android:layout_width="match_parent"
+        	android:layout_height="@dimen/feedback_msg_height"
+        	android:layout_marginTop="3dp"
+        	android:gravity="left|top"
+        	android:hint="@string/feedback_edit_msg_tip" />
+    
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

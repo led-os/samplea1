@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/function_purchase_title_group"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/function_purhcae_list_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp" >
+
+        <com.jiubang.ggheart.apps.desks.purchase.FunctionTrialTimeLeftView
+            android:id="@+id/timeleft"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+        <com.jiubang.ggheart.components.DeskTextView
+            android:id="@+id/function_purchase_title"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#242424"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/function_purhcae_buy"
+        android:gravity="center" >
+
+        <com.jiubang.ggheart.components.DeskButton
+            android:id="@+id/btn_fullpay"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:background="@drawable/function_purchase_btn_selector"
+            android:gravity="center"
+            android:shadowColor="#c1000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="0"
+            android:text="@string/function_purchase_payall"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:id="@+id/functionlist"
+        android:fadingEdge="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_btn_group"
+        android:layout_below="@id/function_purchase_title_group" />
+
+</RelativeLayout>

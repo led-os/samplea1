@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="GOLauncher_20140325">
+  <ReviewIssue id="HT7ANE11">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-03-25 :: 22:43:48:037 CST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-03-25 :: 22:43:50:379 CST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>20140325</ReviewerId>
+    <AssignedTo>20140325</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

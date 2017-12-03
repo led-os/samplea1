@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 预览图片 -->
+	<string-array name="goswitch_previewlist">
+		<item>goswitch_widget_preview41</item>
+	</string-array>
+	<!-- 预览图片底部描述 -->
+	<string-array name="goswitch_namelist">
+	    <item>goswitcherwidget41_preview_title</item>
+	</string-array>
+
+	<integer-array name="goswitch_typelist">
+	    <item>2</item>
+	</integer-array>
+	<integer-array name="goswitch_rowlist">
+		<item>1</item>
+	</integer-array>
+
+	<integer-array name="goswitch_columnlist">
+		<item>4</item>
+	</integer-array>
+
+	<string-array name="goswitch_layoutidlist">
+	    <item>goswitch_widget_41_layout</item>
+	    <!-- <item>main_new</item> -->
+	</string-array>
+
+	<integer-array name="goswitch_minWidth">
+	    <item>292</item>
+	</integer-array>
+
+	<integer-array name="goswitch_minHeight">
+		<item>73</item>
+	</integer-array>
+</resources>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<recommend_gowidget>
+    <!-- OK截屏 -->
+    <item pkgname="com.gau.go.launcherex.gowidget.okscreenshot"
+		  widgetname="okscreenshot"
+		  imgname="favorite_okscreenshot"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/screenshot.png"
+		  ftp="http://godfs.3g.cn/dynamic/OKScreenshot_v1.0.apk"
+		  market="https://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.okscreenshot">
+	</item>
+    <!-- 新开关 
+	<item pkgname="com.gau.go.launcherex.gowidget.newswitchwidget"
+		  widgetname="switcher"
+		  imgname="favorite_switcher"
+		  imgurl="http://goappdl.goforandroid.com/resdown/go_plugins_switch.png"
+		  ftp="http://godfs.3g.cn/dynamic/resdown/NewSwitchWidget_v1.0.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.newswitchwidget">
+	</item> -->
+     <!-- 倒计时 -->
+	<item pkgname="com.gau.go.launcherex.gowidget.timer"
+		  widgetname="timer"
+		  imgname="favorite_timer"
+		  imgurl="http://goappdl.goforandroid.com/resdown/201311011509/go_plugins_timer.png"
+		  ftp="http://godfs.3g.cn/dynamic/resdown/OKTimerWidget_v1.0.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.timer">
+	</item>
+    <!-- 二维码 -->
+	<item pkgname="com.gau.go.launcherex.gowidget.gobarcodescanner"
+		  widgetname="recordscanner"
+		  imgname="favorite_recordscanner"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201311011303/go_plugins_scan.png"
+		  ftp="http://godfs.3g.cn/dynamic/resdown/201310291108/GoBarcodeScanner.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.gobarcodescanner">
+	</item>
+	
+	<!-- 手电筒 -->
+	<item pkgname="com.gau.go.launcherex.gowidget.flashlight"
+		  widgetname="flashlight"
+		  imgname="favorite_flashlight"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201311011303/go_plugins_flashlight.png"
+		  ftp="http://godfs.3g.cn/dynamic/resdown/201310151040/GoFlashlight.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.flashlight">
+	</item>
+	
+	<!-- GO天气EX -->
+	<item pkgname="com.gau.go.launcherex.gowidget.weatherwidget"
+		  widgetname="weather"
+		  imgname="favorite_weather"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182020/go_plugins_weather.jpg"
+		  ftp="http://smsftp.3g.cn/soft/3GHeart/golauncher/widget/qudao/goweatherex/goweatherex_202.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.weatherwidget">
+	</item>
+	
+	<!-- 任务管理器 -->
+	<item pkgname="com.gau.go.launcherex.gowidget.taskmanagerex"
+		  widgetname="task_killer"
+		  imgname="favorite_task_new"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182019/go_plugins_taskmanager.jpg"
+		  ftp="http://smsftp.3g.cn/soft/GoTaskManagerEX/qudao/gotaskmanagerex_202.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.taskmanagerex">
+	</item>
+	
+	<!-- 时钟 -->
+	<item pkgname="com.gau.go.launcherex.gowidget.clockwidget"
+		  widgetname="clock"
+		  imgname="favorite_clock"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182017/go_plugins_clock.jpg"
+		  ftp="http://smsftp.3g.cn/soft/3GHeart/golauncher/widget/FTP/clock.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.clockwidget">
+	</item>
+	
+	<!-- 便签 -->
+	<item pkgname="com.gau.go.launcherex.gowidget.notewidget"
+		  widgetname="note"
+		  imgname="favorite_note"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182019/go_plugins_note.jpg"
+		  ftp="http://smsftp.3g.cn/soft/3GHeart/golauncher/widget/FTP/Note.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.notewidget">
+	</item>
+	
+	<!-- 新便签 -->
+<!-- 	<item pkgname="com.gau.go.launcherex.gowidget.newnotewidget"
+		  widgetname="note"
+		  imgname="favorite_note"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201309111041/go_plugins_newnote.jpg"
+		  ftp="http://smsftp.3g.cn/soft/3GHeart/golauncher/widget/FTP/Note.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.newnotewidget">
+	</item> -->
+	
+	<!-- 联系人 todo-->
+	<item pkgname="com.gau.go.launcherex.gowidget.contactwidget"
+		  widgetname="contact"
+		  imgname="favorite_note"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182017/go_plugins_contacts.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/golauncher/widget/FTP/Contact.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.contactwidget">
+	</item>
+	
+	<!-- 邮件 todo-->
+	<item pkgname="com.gau.go.launcherex.gowidget.emailwidget"
+		  widgetname="email"
+		  imgname="favorite_note"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182017/go_plugins_email.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/golauncher/widget/FTP/Email.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.emailwidget">
+	</item>
+	
+	<!-- FBwidget todo-->
+	<!-- <item pkgname="com.gau.go.launcherex.gowidget.fbwidget"
+		  widgetname="fbwidget_title"
+		  imgname="favorite_note"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182018/go_plugins_FBwidget.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/golauncher/widget/FBWidget.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.fbwidget">
+	</item> -->
+	
+	<!-- 短信 -->
+	<item pkgname="com.jb.gosms"
+		  widgetname="gosms"
+		  imgname="favorite_gosms_new"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182019/go_plugins_SMS.jpg"
+		  ftp="http://smsftp.3g.cn/soft/gosms/hutui/GOSmsLauncherwidget.apk"
+		  market="http://play.google.com/store/apps/details?id=com.jb.gosms">
+	</item>
+	
+	<!-- 书签 todo-->
+	<!-- <item pkgname="com.gau.go.launcherex.gowidget.bookmark"
+		  widgetname="bookmark"
+		  imgname="favorite_gosms_new"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182016/go_plugins_bookmark.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/golauncher/widget/FTP/Bookmark.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.bookmark">
+	</item> -->
+	
+	<!-- 3g门户新闻 todo-->
+	<item pkgname="com.gau.go.launcherex.gowidget.newswidget"
+		  widgetname="threegnews_title"
+		  imgname="favorite_gosms_new"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182018/go_plugins_news.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/golauncher/widget/FTP/3G_News.apk">
+	</item>
+	
+	<!-- 搜索 -->
+	<item pkgname="com.gau.go.launcherex.gowidget.searchwidget"
+		  widgetname="search"
+		  imgname="favorite_search"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182019/go_plugins_search.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/golauncher/widget/Search_widget.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.searchwidget">
+	</item>
+	
+	<!-- 省电 -->
+	<item pkgname="com.gau.go.launcherex.gowidget.gopowermaster"
+		  widgetname="powermanager_title"
+		  imgname="favorite_powermaster"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304191434/go_plugins_powermaster.jpg"
+		  ftp="http://smsftp.3g.cn/soft/3GHeart/golauncher/widget/qudao/gopowermaster/gopowermaster_202.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.gopowermaster">
+	</item>
+	
+	<!-- 开关 -->
+	<!-- 
+    <item pkgname="com.gau.go.launcherex.gowidget.switchwidget"
+		  widgetname="onoff"
+		  imgname="favorite_switch"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182019/go_plugins_switch.jpg"
+		  ftp="http://smsftp.3g.cn/soft/3GHeart/golauncher/widget/qudao/switch/Switch_202.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.switchwidget">
+	</item>
+	 -->
+
+	<!-- 日历 -->
+ 	<item pkgname="com.gau.go.launcherex.gowidget.calendarwidget"
+		  widgetname="calendar"
+		  imgname="favorite_calendar"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182017/go_plugins_calendar.jpg"
+		  ftp="http://smsftp.3g.cn/soft/3GHeart/golauncher/widget/FTP/Calendar.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.calendarwidget">
+	</item> 
+
+	<!-- 新日历 -->
+	<item pkgname="com.gau.go.launcherex.gowidget.newcalendarwidget"
+		  widgetname="calendar"
+		  imgname="favorite_calendar"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201309101358/go_plugins_newcalendar.jpg"
+		  ftp="http://smsftp.3g.cn/soft/3GHeart/golauncher/widget/FTP/Calendar.apk"
+		  market="https://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.newcalendarwidget">
+	</item>
+	
+	<!-- Twitter todo -->
+	<!-- <item pkgname="com.gau.go.launcherex.gowidget.twitterwidget"
+		  widgetname="twitter_title"
+		  imgname="favorite_calendar"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182020/go_plugins_twitter.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/golauncher/widget/FTP/Twitter.apk"
+		  market="http://play.google.com/store/apps/details?id=com.gau.go.launcherex.gowidget.twitterwidget">
+	</item> -->
+	
+	<!-- Now 直播 
+	<item pkgname="com.gau.go.launcherex.gowidget.nowwidget"
+		  widgetname="now_title"
+		  imgname="favorite_calendar"
+		  imgurl="http://goappdl.goforandroid.com/dynamic/resdown/201304182020/go_plugins_weather.jpg"
+		  ftp="http://godfs.3g.cn/soft/3GHeart/golauncher/widget/FTP/Now.apk">
+	</item>-->
+	
+
+</recommend_gowidget>

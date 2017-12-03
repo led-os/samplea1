@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentview"
+    android:layout_width="wrap_content"
+    android:layout_height="250dp"
+    android:background="@drawable/folder_edit_bg"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <com.jiubang.ggheart.components.DeskTextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/folder_top_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dip"
+        android:text="@string/golauncher_deliver_dialog_title"
+        android:textColor="#252424"
+        android:textSize="17sp" />
+
+    <com.jiubang.ggheart.components.DeskTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="13dip"
+        android:text="@string/golauncher_deliver_dialog_message"
+        android:textColor="#252424"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <com.jiubang.ggheart.components.DeskButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/folder_button_selector"
+            android:gravity="center"
+            android:text="@string/golauncher_deliver_dialog_cancel"
+            android:textColor="#343434"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/folder_button_line" />
+
+        <com.jiubang.ggheart.components.DeskButton
+            android:id="@+id/btn_download"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/folder_button_selector"
+            android:gravity="center"
+            android:text="@string/golauncher_deliver_dialog_download"
+            android:textColor="#343434"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

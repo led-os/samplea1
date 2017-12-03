@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- 预览图片 -->
+	<string-array name="appgame_previewlist">
+		<item>go_recomm_widget_preview</item>
+		<item>go_market_preview_new</item>
+	</string-array>
+
+<!-- 预览图片底部描述 -->
+	<string-array name="appgame_namelist">
+	    <item>gorecommwidget42_preview_title</item>
+		<item>appgamewidget41_preview_title</item>
+	</string-array>
+
+	<integer-array name="appgame_typelist">
+	    <item>3</item>
+	    <item>1</item>
+	</integer-array>
+
+	<integer-array name="appgame_rowlist">
+	    <item>2</item>
+		<item>1</item>
+	</integer-array>
+
+	<integer-array name="appgame_columnlist">
+	    <item>4</item>
+		<item>4</item>
+	</integer-array>
+
+	<string-array name="appgame_layoutidlist">
+	    <item>gorecomm_widget_42_layout</item>
+		<item>appgamewidget41</item>
+	</string-array>
+
+	<integer-array name="appgame_minWidth">
+	    <item>292</item>
+		<item>292</item>
+	</integer-array>
+
+	<integer-array name="appgame_minHeight">
+	    <item>146</item>
+		<item>73</item>
+	</integer-array>
+</resources>

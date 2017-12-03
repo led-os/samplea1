@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paidtheme>
+<version version="1" />
+<recommend recommend="2" />
+<item pkgname="com.gau.go.launcherex.theme.FD.SOUL.fourinone" preview="paidtheme_snowman">soul_title</item>
+<item pkgname="com.gau.go.launcherex.theme.magicworld.fourinone" preview="paidtheme_maginworld">magic_world_title</item>
+<item pkgname="com.gau.go.launcherex.theme.gfarm" preview="paidtheme_gfam">gfarm_world_title</item>
+<item pkgname="com.gau.go.launcherex.theme.thefoxxxx.fourinone" preview="paidtheme_fox">fox_title</item>
+<item pkgname="com.gau.go.launcherex.theme.MyTheme.fourinone" preview="paidtheme_mytheme">mytheme_title</item>
+<item pkgname="com.gau.go.launcherex.theme.darkangel" preview="paidtheme_darkangel">dark_angel_title</item>
+</paidtheme>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 预览图片 -->
+    <string-array name="goweather_previewlist">
+        <item>inner_go_weather_preview</item>
+    </string-array>
+
+    <!-- 预览图片底部描述 -->
+    <string-array name="goweather_namelist">
+        <item>goweatherwidget41_preview_title</item>
+    </string-array>
+
+    <integer-array name="goweather_typelist">
+        <item>1</item>
+    </integer-array>
+    <integer-array name="goweather_rowlist">
+        <item>1</item>
+    </integer-array>
+    <integer-array name="goweather_columnlist">
+        <item>4</item>
+    </integer-array>
+
+    <string-array name="goweather_layoutidlist">
+        <item>gl_goweather_widget_41_layout</item>
+    </string-array>
+
+    <integer-array name="goweather_minWidth">
+        <item>292</item>
+    </integer-array>
+    
+    <integer-array name="goweather_minHeight">
+        <item>73</item>
+    </integer-array>
+    
+    <string-array name="settinglist">
+        <item>com.jiubang.ggheart.innerwidgets.goweatherwidget.GLGoWeatherConfigAcitvity</item>
+    </string-array>
+
+</resources>

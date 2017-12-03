@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!-- 定义与组件相关的尺寸、坐标 --><resources>
+	<!-- 主题管理 -->
+    <dimen name="singletheme_detail_pic_land_width_hdpi">127dip</dimen>
+    
+    <!-- 桌面帮助层 -->
+    <dimen name="guide_screeneffect_listview_height">170dip</dimen>
+    <dimen name="guide_screeneffect_listview_height_secondtip">170dip</dimen>
+    <dimen name="guide_screeneffect_topline_listview_space">5dip</dimen>
+    <dimen name="guide_screeneffect_listview_button_space">10dip</dimen>
+    <dimen name="guide_screeneffect_title_height">45dip</dimen>
+    <dimen name="guide_screeneffect_topline_listview_space_secondtip">3dip</dimen>
+    <dimen name="guide_screeneffect_listview_button_space_secondtip">3dip</dimen>
+    <dimen name="guide_screeneffect_buttons_settingpath_space_secondtip">3dip</dimen>
+    
+    
+    
+    
+    
+    
+    
+    <dimen name="linearlayout_height">48dip</dimen>
+    <dimen name="text_height">30dip</dimen>
+    
+    <dimen name="sense_indicator_top">5dip</dimen>
+    <dimen name="folder_edit_view_height">310dip</dimen>
+    <dimen name="folder_modify_name_length">250dip</dimen>
+    <dimen name="folder_edit_view_width">415dip</dimen>
+    
+    <!-- 大图标模式下的图文边距设为0 -->
+    <dimen name="large_icon_drawable_padding">0dip</dimen>
+    
+    
+     
+     
+     <!-- 自定义手势 -->
+     
+     
+     <dimen name="gesture_ui_layout_height">353dip</dimen>
+     <!-- 自定义手势 end -->
+     
+     <!-- 应用游戏中心widget的高度 -->
+     <dimen name="appgame_widget_layout_height">72dip</dimen>
+     <dimen name="appgame_widget_layout_margin">1dip</dimen>
+      
+	 
+      
+     <!-- BEGIN 自定义设置 -->
+     <dimen name="desk_setting_visual_tab_icon_frame_width">350dip</dimen>
+     
+     <!-- dock添加图标 -->
+	 <dimen name="dock_add_view_view_height">242dip</dimen>
+	 <dimen name="dock_add_view_view_height_default">182dip</dimen>
+	 
+     <!-- 截屏相关 -->
+	 
+	 
+	 
+	 
+	 <!-- 设置默认桌面 -->
+	
+	<!-- ==================Go推荐Widget==================== -->
+    <!-- Go推荐Widget纵向边距 -->
+    <dimen name="gorecomm_widget_padding_vertical">5dp</dimen>
+	<!-- Go推荐Widget-个性化推荐应用Icon大小 -->
+    <dimen name="gorecomm_widget_icon_size">95dp</dimen>
+    <!-- Go推荐Widget-个性化推荐应用信息上边距 -->
+    <dimen name="gorecomm_widget_individuation_info_paddingtop">20dp</dimen>
+    <!-- Go推荐Widget-个性化推荐应用信息下边距 -->
+    <dimen name="gorecomm_widget_individuation_info_paddingbottom">15dp</dimen>
+    
+    
+    
+    
+</resources>

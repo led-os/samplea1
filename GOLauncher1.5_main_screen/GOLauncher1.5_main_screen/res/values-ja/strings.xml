@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="rate_remind_msg_new">GOランチャーのカスタマイズで豊富な機能を楽しむことを願っています。Google Playで5つ星を評価してご意見をお聞かせください。</string>
+ 	<string name="rate_remind_msg_runningclean">成功に%sMのメモリをリリースしました。GOランチャーが好きなら、５つの星を評価してください。</string>
+ 	<string name="rate_remind_msg_recentlyclean">GOランチャーは、スムーズな操作とアニメーションを持っています。GOランチャーが好きなら、５つの星を評価してください。</string>
+ 	<string name="rate_remind_msg_applytheme">GOランチャーは10000を超えて特別に設計されたテーマを提供します。GOランチャーが好きなら、５つの星を評価してください。</string>
+    <string name="rate_remind_msg_twice">GOランチャーは%sインストールされていました。カスタマイズで豊富な機能を楽しむなら、私達に5つの星を評価してください。</string>
+    <string name="rate_remind_next">すみません</string>
+    <string name="rate_rate">好きです</string>
+	<string name="rate_remind_tips">フィードバック</string>
+	<string name="unit_days">日</string>
+    <string name="unit_hours">時間</string>
+</resources>

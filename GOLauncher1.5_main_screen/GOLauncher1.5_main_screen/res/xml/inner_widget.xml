@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gowidgets xmlns:launcher="http://schemas.android.com/apk/res/com.gau.go.launcherex">
+
+	<!-- appgame widget -->
+	<innner_widget
+		launcher:buildin="all"
+        launcher:prototype="appgame"
+		launcher:inflatePackage="com.gau.go.launcherex"
+		launcher:widgetPackage="com.gau.go.launcherex"
+		launcher:statisticPackage="com.gau.go.launcherex.gowidget.appgame"
+		launcher:title="@string/gorecomm_widget_title"
+		launcher:icon="@drawable/app_center_icon_large"
+		launcher:themeConfig="widget_appgamewidget.xml"
+		launcher:previewList="@array/appgame_previewlist"
+		launcher:nameList="@array/appgame_namelist"
+		launcher:typeList="@array/appgame_typelist"
+		launcher:layoutList="@array/appgame_layoutidlist"
+		launcher:rowList="@array/appgame_rowlist"
+		launcher:columnList="@array/appgame_columnlist"
+		launcher:minHeightList="@array/appgame_minHeight"
+		launcher:minWidthList="@array/appgame_minWidth"
+	/>
+	<!-- goswitch widget -->
+	<innner_widget
+		launcher:buildin="all"
+        launcher:prototype="goswitch"
+		launcher:inflatePackage="com.gau.go.launcherex"
+		launcher:widgetPackage="com.gau.go.launcherex"
+		launcher:statisticPackage="com.gau.go.launcherex.gowidget.goswitch"
+		launcher:title="@string/switcher"
+		launcher:icon="@drawable/switcher"
+		launcher:themeConfig="widget_goswitchwidget.xml"
+		launcher:previewList="@array/goswitch_previewlist"
+		launcher:nameList="@array/goswitch_namelist"
+		launcher:typeList="@array/goswitch_typelist"
+		launcher:layoutList="@array/goswitch_layoutidlist"
+		launcher:rowList="@array/goswitch_rowlist"
+		launcher:columnList="@array/goswitch_columnlist"
+		launcher:minHeightList="@array/goswitch_minHeight"
+		launcher:minWidthList="@array/goswitch_minWidth"
+	/>
+	<!-- goweather widget -->
+	<innner_widget
+		launcher:buildin="all"
+        launcher:prototype="goweather"
+		launcher:inflatePackage="com.gau.go.launcherex"
+		launcher:widgetPackage="com.gau.go.launcherex"
+		launcher:statisticPackage="com.gau.go.launcherex.gowidget.goweather"
+		launcher:title="@string/goweather_widget_name"
+		launcher:icon="@drawable/inner_go_weather_icon"
+		launcher:themeConfig="widget_goweatherwidget.xml"
+		launcher:previewList="@array/goweather_previewlist"
+		launcher:nameList="@array/goweather_namelist"
+		launcher:typeList="@array/goweather_typelist"
+		launcher:layoutList="@array/goweather_layoutidlist"
+		launcher:rowList="@array/goweather_rowlist"
+		launcher:columnList="@array/goweather_columnlist"
+		launcher:minHeightList="@array/goweather_minHeight"
+		launcher:minWidthList="@array/goweather_minWidth"
+		launcher:settinglist="@array/settinglist"
+	/>
+	<!-- GoRecomm widget 
+	<innner_widget
+		launcher:buildin="all"
+        launcher:prototype="gorecomm"
+		launcher:inflatePackage="com.gau.go.launcherex"
+		launcher:widgetPackage="com.gau.go.launcherex"
+		launcher:statisticPackage="com.gau.go.launcherex.gowidget.gorecomm"
+		launcher:title="@string/gorecomm_widget_title"
+		launcher:icon="@drawable/appgame_widget_icon"
+		launcher:themeConfig="widget_gorecommwidget.xml"
+		launcher:previewList="@array/gorecomm_previewlist"
+		launcher:nameList="@array/gorecomm_namelist"
+		launcher:typeList="@array/gorecomm_typelist"
+		launcher:layoutList="@array/gorecomm_layoutidlist"
+		launcher:rowList="@array/gorecomm_rowlist"
+		launcher:columnList="@array/gorecomm_columnlist"
+		launcher:minHeightList="@array/gorecomm_minHeight"
+		launcher:minWidthList="@array/gorecomm_minWidth"
+	/>
+-->
+</gowidgets>

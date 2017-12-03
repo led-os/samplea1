@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.ggheart.apps.desks.diy.filter.view.FilterPreview xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_preview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.jiubang.ggheart.apps.desks.diy.filter.view.ScrollerableWallpaper
+        android:id="@+id/scrollerable_wp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/GridContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <GridView
+            android:id="@+id/compareGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <com.jiubang.ggheart.components.DeskButton
+            android:id="@+id/setNow"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/filter_preivew_setnow_selector"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/filter_wallpaper_set"
+            android:textColor="#E4E3E2"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/filter_preview_prime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/setNow"
+            android:layout_alignTop="@id/setNow"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/filter_prime" />
+    </RelativeLayout>
+
+</com.jiubang.ggheart.apps.desks.diy.filter.view.FilterPreview>

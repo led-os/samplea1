@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.jiubang.ggheart.apps.desks.diy.plugin.PluginItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/widgetLayout"
+        android:layout_width="154dp"
+        android:layout_height="186.5dp"
+        android:background="@drawable/plugin_manage_item_bg">                      
+         <ImageView
+          android:id="@+id/widgetImage"
+          android:layout_width="fill_parent"
+          android:layout_height="148.5dp"
+          android:layout_alignParentTop="true"
+          android:background="@drawable/plugin_manage_item_image_bg"
+          android:scaleType="centerInside"/>
+		
+          <RelativeLayout
+            android:id="@+id/widgetTextLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/widgetImage">
+            
+             <com.jiubang.ggheart.components.DeskTextView 
+                android:id="@+id/widgetState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+				android:layout_alignParentRight="true"
+				android:gravity="right"
+				android:paddingRight="5dp"
+                android:ellipsize="end"
+                android:textSize="10sp"
+                android:textColor="#86d000"
+                android:layout_centerVertical="true"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="1"
+                android:shadowColor="#ffffffff"
+                />
+ 
+           <ImageView 
+				android:id="@+id/widgetMenu"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/plugin_manage_menu_icon"
+				android:background="@drawable/theme_detail_back_selector"
+				android:scaleType="centerInside"
+				android:visibility="gone"
+			/>
+            <com.jiubang.ggheart.components.DeskTextView 
+                android:id="@+id/widgetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:textColor="#707070"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="3dp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>    
+ </com.jiubang.ggheart.apps.desks.diy.plugin.PluginItemView>
+   

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
+	<!-- 主题管理 -->
+	<!-- 
+    <dimen name="singletheme_detail_pic_width">167dip</dimen>
+    <dimen name="singletheme_detail_pic_height">270dip</dimen>
+     -->
+    <dimen name="singletheme_detail_pic_width_ldpi">136dip</dimen>
+    
+    <dimen name="theme_list_item_height">164dip</dimen>
+<!--     <dimen name="theme_list_item_height">165dip</dimen> -->  
+
+  	<!-- 去gostore下载bar高度 -->	
+	<dimen name="theme_gostore_bar_height">48dip</dimen>
+	<dimen name="theme_top_height">48dip</dimen>
+	<dimen name="theme_tab_height">56dip</dimen>	    
+    	<!-- Listview的item间距 -->
+	<dimen name="theme_list_item_divider_height">6dip</dimen>
+    
+    <!-- 桌面帮助层 -->
+    <dimen name="guide_screeneffect_title_height">40dip</dimen>
+    <dimen name="guide_screeneffect_buttons_settingpath_space_secondtip">10dip</dimen>
+    
+    
+    
+    
+    
+    
+    
+    <dimen name="guide_dock_button_margin_top">30dp</dimen>
+    <dimen name="guide_dock_tip_width">210dp</dimen>
+    <!-- 功能表帮助层 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- 行列数自适应 -->
+    
+    
+    
+     <!-- 应用游戏中心的按钮文件大小 -->
+     <dimen name="appgame_textSize_cn">12dip</dimen>
+     <dimen name="appgame_textSize_es">11dip</dimen>
+     <!-- 应用游戏中心启动loading页 -->
+     <dimen name="appgame_startloading_image_width">209.99999997dp</dimen>
+     <dimen name="appgame_startloading_image_height">222.00000003dp</dimen>
+     <dimen name="appgame_startloading_image_topmargin">50dp</dimen>
+     <dimen name="appgame_startloading_title_size">24dp</dimen>
+     <dimen name="appgame_startloading_title_topmargin">8dp</dimen>
+     <dimen name="appgame_startloading_desc_size">12.666666666667dp</dimen>
+     <dimen name="appgame_startloading_desc_topmargin">17.33333333333dp</dimen>
+     <dimen name="appgame_startloading_progress_width">20dp</dimen>
+     <dimen name="appgame_startloading_progress_height">20dp</dimen>
+     <dimen name="appgame_startloading_progress_topmargin">16.66666667dp</dimen>
+     <dimen name="appgame_startloading_copyright_bottommargin">15dp</dimen>
+     <dimen name="appgame_startloading_copyright_size">11.33333333dp</dimen>
+     
+     <!-- facebook相关 -->
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    
+    
+    <dimen name="theme_list_banner_height">47dip</dimen>
+    
+    <dimen name="guide_big_logo_margin_top">20dip</dimen>
+    <dimen name="guide_function_margin_top">12dp</dimen>
+    <dimen name="guide_new_user_title_margin_top">70dp</dimen>
+    <dimen name="guide_update_title_margin_top">30dp</dimen>
+    <dimen name="guide_agreement_margin_top">20dp</dimen>
+    <dimen name="guide_enter_margin_bottom">30dp</dimen> 
+	<dimen name="guide_update_content_margin_top">10dp</dimen>
+    <dimen name="guide_update_content_height">180dp</dimen>  
+</resources>
